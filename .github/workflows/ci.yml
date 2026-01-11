@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run make deploy
+        run: make deploy
+
+      - name: Verify symlinks
+        run: |
+          test -L "$HOME/.gitconfig"
+          test -L "$HOME/.tmux.conf"
+          test -L "$HOME/.vimrc"
+          test -L "$HOME/.config/nvim"
+          echo "All symlinks created successfully"
