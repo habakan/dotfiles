@@ -6,6 +6,9 @@ return {
       "rafamadriz/friendly-snippets",
     },
     opts = {
+      enabled = function()
+        return vim.bo.filetype ~= "markdown"
+      end,
       keymap = {
         preset = "default",
         ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
