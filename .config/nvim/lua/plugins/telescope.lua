@@ -11,7 +11,18 @@ return {
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
     },
     config = function()
-      require("telescope").setup({})
+      require("telescope").setup({
+        pickers = {
+          find_files = {
+            hidden = true,
+          },
+          live_grep = {
+            additional_args = function()
+              return { "--hidden" }
+            end,
+          },
+        },
+      })
     end,
   },
 }
