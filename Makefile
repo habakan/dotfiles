@@ -6,7 +6,7 @@ DOTFILES_FILES    := $(filter-out $(DOTFILES_EXCLUDES), $(DOTFILES_TARGET))
 deploy:
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 	@mkdir -p $(HOME)/.config
-	@$(foreach val, $(wildcard .config/*), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+	@$(foreach val, $(wildcard config/*), ln -sfnv $(abspath $(val)) $(HOME)/.config/$(notdir $(val));)
 
 init:
 	@$(foreach val, $(wildcard ./etc/init/*.sh), bash $(val);)
