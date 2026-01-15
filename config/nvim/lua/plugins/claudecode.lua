@@ -19,6 +19,10 @@ return {
               height = 0.30,
             },
           },
+          diff_opts = {
+            auto_close_on_accept = true,
+            open_in_current_tab = false,
+          },
         }
       else
         return {
@@ -26,6 +30,10 @@ return {
             split_side = "right",
             split_width_percentage = 0.40,
             provider = "snacks",
+          },
+          diff_opts = {
+            auto_close_on_accept = true,
+            open_in_current_tab = false,
           },
         }
       end
