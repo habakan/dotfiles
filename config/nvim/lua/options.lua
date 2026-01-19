@@ -10,6 +10,7 @@ vim.opt.showcmd = true
 -- 見た目
 vim.opt.number = true
 vim.opt.cursorline = true
+vim.opt.cursorlineopt = "both" -- 行番号とスクリーンライン両方をハイライト
 vim.opt.virtualedit = "onemore"
 vim.opt.smartindent = true
 vim.opt.showmatch = true
