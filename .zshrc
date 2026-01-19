@@ -35,6 +35,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias vim='nvim'
 alias v='nvim'
 alias gs='git status'
 alias gc='git commit'
