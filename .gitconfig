@@ -1,3 +1,9 @@
-[user]
-	email = kansukebano@gmail.com
-	name = habakan
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[push]
+	default = current
+[include]
+	path = ~/.gitconfig.local
