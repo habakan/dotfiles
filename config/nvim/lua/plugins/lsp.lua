@@ -18,6 +18,9 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
+          "pyright",      -- Python
+          "ts_ls",        -- TypeScript/JavaScript
+          "solargraph",   -- Ruby
         },
         automatic_installation = true,
       })
@@ -56,6 +59,18 @@ return {
         },
       }
       vim.lsp.enable("lua_ls")
+
+      -- Python
+      vim.lsp.enable("pyright")
+
+      -- TypeScript/JavaScript
+      vim.lsp.enable("ts_ls")
+
+      -- Ruby
+      vim.lsp.enable("solargraph")
+
+      -- Swift (Xcodeに付属のsourcekit-lspを使用)
+      vim.lsp.enable("sourcekit")
     end,
   },
 }
