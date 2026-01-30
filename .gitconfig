@@ -1,9 +1,7 @@
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[push]
-	default = current
+[user]
+	email = kansukebano@gmail.com
+	name = habakan
+[core]
+	hooksPath = /home/habakan/.gpush-hooks
 [include]
 	path = ~/.gitconfig.local
