@@ -48,3 +48,4 @@ alias gl='git log --oneline --graph --decorate -10'
 
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+eval "$(rbenv init -)"
