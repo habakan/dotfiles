@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editor - Vim/Neovim
+*.swp
+*.swo
+*.swn
+Session.vim
+.netrwhist
+
+# Editor - VSCode
+.vscode/
+
+# Editor - JetBrains
+.idea/
+*.iml
+
+# Editor - Sublime Text
+*.sublime-workspace
+
+# Tags
+tags
+TAGS
+
+# Logs
+*.log
+
+# Environment
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# direnv
+.direnv/
+.envrc
