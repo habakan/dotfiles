@@ -2,7 +2,7 @@
 	email = kansukebano@gmail.com
 	name = habakan
 [core]
-	hooksPath = /home/habakan/.gpush-hooks
+	hooksPath = ~/.gpush-hooks
 	excludesfile = ~/.gitignore_global
 [include]
 	path = ~/.gitconfig.local
