@@ -52,3 +52,5 @@ alias gl='git log --oneline --graph --decorate -10'
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/habano/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
