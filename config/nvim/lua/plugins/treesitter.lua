@@ -7,6 +7,7 @@ return {
       if not ok then
         return
       end
+
       configs.setup({
         ensure_installed = {
           "lua",

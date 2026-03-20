@@ -71,6 +71,14 @@ return {
 
       -- Swift (Xcodeに付属のsourcekit-lspを使用)
       vim.lsp.enable("sourcekit")
+
+      -- MoonBit (moonbit toolchain付属のLSP)
+      vim.lsp.config.moonbit_lsp = {
+        cmd = { "moonbit-lsp" },
+        filetypes = { "moonbit" },
+        root_markers = { "moon.mod.json" },
+      }
+      vim.lsp.enable("moonbit_lsp")
     end,
   },
 }
