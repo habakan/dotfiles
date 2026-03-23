@@ -46,6 +46,15 @@ alias gl='git log --oneline --graph --decorate -10'
 # Load Powerlevel10k config
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
+# Sync dotfiles on login (background)
+(
+  cd ~/dotfiles 2>/dev/null &&
+  git fetch -q origin main &&
+  if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+    git pull --ff-only -q && make deploy
+  fi
+) &>/dev/null &
+
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
