@@ -1,0 +1,285 @@
+lockfile_version: '1'
+generated_at: '2026-06-27T02:49:38.901401+00:00'
+dependencies: []
+local_deployed_files:
+- .agents/skills/bizdev
+- .agents/skills/bizdev/SKILL.md
+- .agents/skills/bizdev/templates/business-plan.md
+- .agents/skills/bizdev/templates/pitch-deck.md
+- .agents/skills/docx
+- .agents/skills/docx/LICENSE.txt
+- .agents/skills/docx/SKILL.md
+- .agents/skills/docx/USAGE.md
+- .agents/skills/docx/docx-js.md
+- .agents/skills/docx/ooxml.md
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd
+- .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd
+- .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd
+- .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd
+- .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd
+- .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd
+- .agents/skills/docx/ooxml/schemas/mce/mc.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-2010.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-2012.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-2018.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-cex-2018.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-cid-2016.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd
+- .agents/skills/docx/ooxml/schemas/microsoft/wml-symex-2015.xsd
+- .agents/skills/docx/ooxml/scripts/pack.py
+- .agents/skills/docx/ooxml/scripts/unpack.py
+- .agents/skills/docx/ooxml/scripts/validate.py
+- .agents/skills/docx/ooxml/scripts/validation/__init__.py
+- .agents/skills/docx/ooxml/scripts/validation/base.py
+- .agents/skills/docx/ooxml/scripts/validation/docx.py
+- .agents/skills/docx/ooxml/scripts/validation/pptx.py
+- .agents/skills/docx/ooxml/scripts/validation/redlining.py
+- .agents/skills/docx/scripts/__init__.py
+- .agents/skills/docx/scripts/document.py
+- .agents/skills/docx/scripts/templates/comments.xml
+- .agents/skills/docx/scripts/templates/commentsExtended.xml
+- .agents/skills/docx/scripts/templates/commentsExtensible.xml
+- .agents/skills/docx/scripts/templates/commentsIds.xml
+- .agents/skills/docx/scripts/templates/people.xml
+- .agents/skills/docx/scripts/utilities.py
+- .agents/skills/english-tutor
+- .agents/skills/english-tutor/SKILL.md
+- .agents/skills/grill-me
+- .agents/skills/grill-me/SKILL.md
+- .agents/skills/neovim
+- .agents/skills/neovim/SKILL.md
+- .agents/skills/review-pr
+- .agents/skills/review-pr/SKILL.md
+- .claude/skills/bizdev
+- .claude/skills/bizdev/SKILL.md
+- .claude/skills/bizdev/templates/business-plan.md
+- .claude/skills/bizdev/templates/pitch-deck.md
+- .claude/skills/docx
+- .claude/skills/docx/LICENSE.txt
+- .claude/skills/docx/SKILL.md
+- .claude/skills/docx/USAGE.md
+- .claude/skills/docx/docx-js.md
+- .claude/skills/docx/ooxml.md
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd
+- .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd
+- .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd
+- .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd
+- .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd
+- .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd
+- .claude/skills/docx/ooxml/schemas/mce/mc.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-2010.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-2012.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-2018.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-cex-2018.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-cid-2016.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd
+- .claude/skills/docx/ooxml/schemas/microsoft/wml-symex-2015.xsd
+- .claude/skills/docx/ooxml/scripts/pack.py
+- .claude/skills/docx/ooxml/scripts/unpack.py
+- .claude/skills/docx/ooxml/scripts/validate.py
+- .claude/skills/docx/ooxml/scripts/validation/__init__.py
+- .claude/skills/docx/ooxml/scripts/validation/base.py
+- .claude/skills/docx/ooxml/scripts/validation/docx.py
+- .claude/skills/docx/ooxml/scripts/validation/pptx.py
+- .claude/skills/docx/ooxml/scripts/validation/redlining.py
+- .claude/skills/docx/scripts/__init__.py
+- .claude/skills/docx/scripts/document.py
+- .claude/skills/docx/scripts/templates/comments.xml
+- .claude/skills/docx/scripts/templates/commentsExtended.xml
+- .claude/skills/docx/scripts/templates/commentsExtensible.xml
+- .claude/skills/docx/scripts/templates/commentsIds.xml
+- .claude/skills/docx/scripts/templates/people.xml
+- .claude/skills/docx/scripts/utilities.py
+- .claude/skills/english-tutor
+- .claude/skills/english-tutor/SKILL.md
+- .claude/skills/grill-me
+- .claude/skills/grill-me/SKILL.md
+- .claude/skills/neovim
+- .claude/skills/neovim/SKILL.md
+- .claude/skills/review-pr
+- .claude/skills/review-pr/SKILL.md
+local_deployed_file_hashes:
+  .agents/skills/bizdev/SKILL.md: sha256:4978731e5f6d7e090f71409e6c781f096e359c746061ef84e583307061a9ec80
+  .agents/skills/bizdev/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
+  .agents/skills/bizdev/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
+  .agents/skills/docx/LICENSE.txt: sha256:79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa
+  .agents/skills/docx/SKILL.md: sha256:0bd90681fcab2e282025ee14acf508b60bbd6c41ac6c3bf83c0dc14d52c37933
+  .agents/skills/docx/USAGE.md: sha256:1d083016f0515318b37ba34ab201ce61c57362921c4a382b37918f7bbfca38ea
+  .agents/skills/docx/docx-js.md: sha256:83b4a2f88d058a10509fbc0b3b12b6933c407805f4d4afc955cd3fb939c16428
+  .agents/skills/docx/ooxml.md: sha256:a16f922797eeaa3670ea31c1e49d15b799613d03f39445c857a5dd3221aa3597
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd: sha256:41b93bd8857cc68b1e43be2806a872d736a9bdd6566900062d8fdb57d7bbb354
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd: sha256:3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd: sha256:29b254ee0d10414a8504b5a08149c7baec35a60d5ff607d6b3f492aa36815f40
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd: sha256:5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd: sha256:5375417f0f5394b8dd1a7035b9679151f19a6b65df309dec10cfb4a420cb00e9
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd: sha256:5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd: sha256:b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd: sha256:bdad416b096b61d37b71603b2c949484f9070c830bdaeba93bf35e15c8900614
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd: sha256:d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd: sha256:3c6709101c6aaa82888df5d8795c33f9e857196790eb320d9194e64be2b6bdd8
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd: sha256:0b364451dc36a48dd6dae0f3b6ada05fd9b71e5208211f8ee5537d7e51a587e2
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd: sha256:e2abacbb9a55ce1365f8961bc1b1395bbc811e512b111000d8c333f98458dece
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd: sha256:0ef4bb354ff44b923564c4ddbdda5987919d220225129ec94614a618ceafc281
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd: sha256:0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd: sha256:9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd: sha256:bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd: sha256:7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd: sha256:3213ef1631606250f5010b42cad7ef716f7c59426367798e33c374c0ec391d3a
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd: sha256:12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd: sha256:beffeed56945c22a77440122c8bdc426f3fcbe7f3b12ea0976c770d1f8d54578
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd: sha256:f5ee623b08b6a66935e5aced2f5d8ad0fc71bf9e8e833cd490150c0fa94b8763
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd: sha256:585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd: sha256:133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd: sha256:6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd: sha256:475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd: sha256:c2dd9f61f892deae6acd8d20771ea79b12018af25f3bf8d06639c8542d218cfd
+  .agents/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd: sha256:a539aa2fb154fa50e0f5cc97e6ad7cbc66f8ec3e3746f61ec6a8b0d5d15ecdf2
+  .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd: sha256:9e0b7209fc69ab11987900404540969976000c5ebe4d4f58c43dc3842886bf3a
+  .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd: sha256:451958454e8588dfc7cd945981ada142ca06ff3307937f5700df059c2b307fa8
+  .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd: sha256:6de111e11403f7cd49027400755bae0ea1cabef2815f09bd40a24f0017613b24
+  .agents/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd: sha256:f565adfef5a502044abc3a9153e157edc25af78304d335994afb958874b15e26
+  .agents/skills/docx/ooxml/schemas/mce/mc.xsd: sha256:3a37e461ecf5a8670fdec34029703401f8728ab9c96ec1739a6ae58d55212413
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-2010.xsd: sha256:568b26ee156cb9549aa439ca2158965f77b7c1602b7e0316f40ac6cf586e35f2
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-2012.xsd: sha256:0fa75578a000439a7988ba0c59fdc69f774bbd416cbacc14d07125b3f686cb74
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-2018.xsd: sha256:be0ff793a22dd31384650c3a4da14c2fa8062751c2e97b0e5ee852bda13c60ad
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-cex-2018.xsd: sha256:fddc2b880cabb9005aebbc7e783e53c19fec1c03df7d0e2f2076a33a0fdfd081
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-cid-2016.xsd: sha256:127ca209fa73d7cb708449cb355c871867948a96e4a74f7bf5811ef62d17991d
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd: sha256:842e7163409c8d74f4d7088a8bc99500d80bc75332681a0980055b08f374a604
+  .agents/skills/docx/ooxml/schemas/microsoft/wml-symex-2015.xsd: sha256:16f6f8072249f431370723c2cd8974672e0d9c897e00e97dd918079df934871b
+  .agents/skills/docx/ooxml/scripts/pack.py: sha256:6fe762f45aff8c63fd95b9fcb1337b28921d6fa454e18a0e8158d4c8708d6d00
+  .agents/skills/docx/ooxml/scripts/unpack.py: sha256:0bd17f76a1a4c388aba42c6d1d39015fa84e405c3e0692397fe12762bd632b58
+  .agents/skills/docx/ooxml/scripts/validate.py: sha256:1ec252de8b14b07d16966c48906ccb1c45c68bcd23557ad31d8c50a27f5f8c0f
+  .agents/skills/docx/ooxml/scripts/validation/__init__.py: sha256:83e0f035c5abea238d3f2c3968afbd511ed022b527b7c9cb60a9434cc34ff987
+  .agents/skills/docx/ooxml/scripts/validation/base.py: sha256:f2c70d481613456e32b43869d1604b05c236c8da34b5b3967677a661cac7ba63
+  .agents/skills/docx/ooxml/scripts/validation/docx.py: sha256:e65d6cda0525866a24cc847b2e883bd2416ae6f87b3f5b9e2784dfbb0ec13093
+  .agents/skills/docx/ooxml/scripts/validation/pptx.py: sha256:00bf2623da1177b3948143a4ade2f1cda7cb389dee31960861913fa42ef1b00f
+  .agents/skills/docx/ooxml/scripts/validation/redlining.py: sha256:97abfdff4f08f43f9a4bb5c8a2f8fd483398b5b339592724e8635153b5507967
+  .agents/skills/docx/scripts/__init__.py: sha256:83e262a425814b72add701272b99ddcf9635251c5d4672bf9fc38d2b03f00d85
+  .agents/skills/docx/scripts/document.py: sha256:65f8569034a5893bd5ef0654be5168774fe81c0407b0c4ec80992db9fff91c0c
+  .agents/skills/docx/scripts/templates/comments.xml: sha256:87e218a3a295016ec855f2cd74495c416072f29c4846e86b527aec0a4d93ba21
+  .agents/skills/docx/scripts/templates/commentsExtended.xml: sha256:86bf401354c111102033ed147763faccb82479598f17777a3384c2f3e9fa0014
+  .agents/skills/docx/scripts/templates/commentsExtensible.xml: sha256:af5d057e16462ca172cea845e502bafb4f3e1b474a8d5848ffe92214853a4935
+  .agents/skills/docx/scripts/templates/commentsIds.xml: sha256:20168f7b237af091332f8348c548eb7f755f583185bb198359c5978155099d67
+  .agents/skills/docx/scripts/templates/people.xml: sha256:61db9900b579acd4c4f84ff7f40df47e77e9e780c40d5f5ef6a7beba41d62ec5
+  .agents/skills/docx/scripts/utilities.py: sha256:62a4b689056501b91e2df2d1f4e6335818e421c7390e48050717ea8f461a0ed0
+  .agents/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
+  .agents/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
+  .agents/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
+  .agents/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
+  .claude/skills/bizdev/SKILL.md: sha256:4978731e5f6d7e090f71409e6c781f096e359c746061ef84e583307061a9ec80
+  .claude/skills/bizdev/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
+  .claude/skills/bizdev/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
+  .claude/skills/docx/LICENSE.txt: sha256:79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa
+  .claude/skills/docx/SKILL.md: sha256:0bd90681fcab2e282025ee14acf508b60bbd6c41ac6c3bf83c0dc14d52c37933
+  .claude/skills/docx/USAGE.md: sha256:1d083016f0515318b37ba34ab201ce61c57362921c4a382b37918f7bbfca38ea
+  .claude/skills/docx/docx-js.md: sha256:83b4a2f88d058a10509fbc0b3b12b6933c407805f4d4afc955cd3fb939c16428
+  .claude/skills/docx/ooxml.md: sha256:a16f922797eeaa3670ea31c1e49d15b799613d03f39445c857a5dd3221aa3597
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd: sha256:41b93bd8857cc68b1e43be2806a872d736a9bdd6566900062d8fdb57d7bbb354
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd: sha256:3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd: sha256:29b254ee0d10414a8504b5a08149c7baec35a60d5ff607d6b3f492aa36815f40
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd: sha256:5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd: sha256:5375417f0f5394b8dd1a7035b9679151f19a6b65df309dec10cfb4a420cb00e9
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd: sha256:5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd: sha256:b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd: sha256:bdad416b096b61d37b71603b2c949484f9070c830bdaeba93bf35e15c8900614
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd: sha256:d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd: sha256:3c6709101c6aaa82888df5d8795c33f9e857196790eb320d9194e64be2b6bdd8
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd: sha256:0b364451dc36a48dd6dae0f3b6ada05fd9b71e5208211f8ee5537d7e51a587e2
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd: sha256:e2abacbb9a55ce1365f8961bc1b1395bbc811e512b111000d8c333f98458dece
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd: sha256:0ef4bb354ff44b923564c4ddbdda5987919d220225129ec94614a618ceafc281
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd: sha256:0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd: sha256:9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd: sha256:bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd: sha256:7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd: sha256:3213ef1631606250f5010b42cad7ef716f7c59426367798e33c374c0ec391d3a
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd: sha256:12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd: sha256:beffeed56945c22a77440122c8bdc426f3fcbe7f3b12ea0976c770d1f8d54578
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd: sha256:f5ee623b08b6a66935e5aced2f5d8ad0fc71bf9e8e833cd490150c0fa94b8763
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd: sha256:585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd: sha256:133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd: sha256:6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd: sha256:475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd: sha256:c2dd9f61f892deae6acd8d20771ea79b12018af25f3bf8d06639c8542d218cfd
+  .claude/skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd: sha256:a539aa2fb154fa50e0f5cc97e6ad7cbc66f8ec3e3746f61ec6a8b0d5d15ecdf2
+  .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd: sha256:9e0b7209fc69ab11987900404540969976000c5ebe4d4f58c43dc3842886bf3a
+  .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd: sha256:451958454e8588dfc7cd945981ada142ca06ff3307937f5700df059c2b307fa8
+  .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd: sha256:6de111e11403f7cd49027400755bae0ea1cabef2815f09bd40a24f0017613b24
+  .claude/skills/docx/ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd: sha256:f565adfef5a502044abc3a9153e157edc25af78304d335994afb958874b15e26
+  .claude/skills/docx/ooxml/schemas/mce/mc.xsd: sha256:3a37e461ecf5a8670fdec34029703401f8728ab9c96ec1739a6ae58d55212413
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-2010.xsd: sha256:568b26ee156cb9549aa439ca2158965f77b7c1602b7e0316f40ac6cf586e35f2
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-2012.xsd: sha256:0fa75578a000439a7988ba0c59fdc69f774bbd416cbacc14d07125b3f686cb74
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-2018.xsd: sha256:be0ff793a22dd31384650c3a4da14c2fa8062751c2e97b0e5ee852bda13c60ad
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-cex-2018.xsd: sha256:fddc2b880cabb9005aebbc7e783e53c19fec1c03df7d0e2f2076a33a0fdfd081
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-cid-2016.xsd: sha256:127ca209fa73d7cb708449cb355c871867948a96e4a74f7bf5811ef62d17991d
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd: sha256:842e7163409c8d74f4d7088a8bc99500d80bc75332681a0980055b08f374a604
+  .claude/skills/docx/ooxml/schemas/microsoft/wml-symex-2015.xsd: sha256:16f6f8072249f431370723c2cd8974672e0d9c897e00e97dd918079df934871b
+  .claude/skills/docx/ooxml/scripts/pack.py: sha256:6fe762f45aff8c63fd95b9fcb1337b28921d6fa454e18a0e8158d4c8708d6d00
+  .claude/skills/docx/ooxml/scripts/unpack.py: sha256:0bd17f76a1a4c388aba42c6d1d39015fa84e405c3e0692397fe12762bd632b58
+  .claude/skills/docx/ooxml/scripts/validate.py: sha256:1ec252de8b14b07d16966c48906ccb1c45c68bcd23557ad31d8c50a27f5f8c0f
+  .claude/skills/docx/ooxml/scripts/validation/__init__.py: sha256:83e0f035c5abea238d3f2c3968afbd511ed022b527b7c9cb60a9434cc34ff987
+  .claude/skills/docx/ooxml/scripts/validation/base.py: sha256:f2c70d481613456e32b43869d1604b05c236c8da34b5b3967677a661cac7ba63
+  .claude/skills/docx/ooxml/scripts/validation/docx.py: sha256:e65d6cda0525866a24cc847b2e883bd2416ae6f87b3f5b9e2784dfbb0ec13093
+  .claude/skills/docx/ooxml/scripts/validation/pptx.py: sha256:00bf2623da1177b3948143a4ade2f1cda7cb389dee31960861913fa42ef1b00f
+  .claude/skills/docx/ooxml/scripts/validation/redlining.py: sha256:97abfdff4f08f43f9a4bb5c8a2f8fd483398b5b339592724e8635153b5507967
+  .claude/skills/docx/scripts/__init__.py: sha256:83e262a425814b72add701272b99ddcf9635251c5d4672bf9fc38d2b03f00d85
+  .claude/skills/docx/scripts/document.py: sha256:65f8569034a5893bd5ef0654be5168774fe81c0407b0c4ec80992db9fff91c0c
+  .claude/skills/docx/scripts/templates/comments.xml: sha256:87e218a3a295016ec855f2cd74495c416072f29c4846e86b527aec0a4d93ba21
+  .claude/skills/docx/scripts/templates/commentsExtended.xml: sha256:86bf401354c111102033ed147763faccb82479598f17777a3384c2f3e9fa0014
+  .claude/skills/docx/scripts/templates/commentsExtensible.xml: sha256:af5d057e16462ca172cea845e502bafb4f3e1b474a8d5848ffe92214853a4935
+  .claude/skills/docx/scripts/templates/commentsIds.xml: sha256:20168f7b237af091332f8348c548eb7f755f583185bb198359c5978155099d67
+  .claude/skills/docx/scripts/templates/people.xml: sha256:61db9900b579acd4c4f84ff7f40df47e77e9e780c40d5f5ef6a7beba41d62ec5
+  .claude/skills/docx/scripts/utilities.py: sha256:62a4b689056501b91e2df2d1f4e6335818e421c7390e48050717ea8f461a0ed0
+  .claude/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
+  .claude/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
+  .claude/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
+  .claude/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
