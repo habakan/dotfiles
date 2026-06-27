@@ -1,3 +1,6 @@
 [submodule "claude"]
 	path = claude
 	url = git@github.com:habakan/claude-config.git
+[submodule ".apm/skills"]
+	path = .apm/skills
+	url = git@github.com:habakan/skills.git

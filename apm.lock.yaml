@@ -1,0 +1,43 @@
+lockfile_version: '1'
+generated_at: '2026-06-27T02:49:38.901401+00:00'
+dependencies: []
+local_deployed_files:
+- .agents/skills/bizdev
+- .agents/skills/bizdev/SKILL.md
+- .agents/skills/bizdev/templates/business-plan.md
+- .agents/skills/bizdev/templates/pitch-deck.md
+- .agents/skills/english-tutor
+- .agents/skills/english-tutor/SKILL.md
+- .agents/skills/grill-me
+- .agents/skills/grill-me/SKILL.md
+- .agents/skills/neovim
+- .agents/skills/neovim/SKILL.md
+- .agents/skills/review-pr
+- .agents/skills/review-pr/SKILL.md
+- .claude/skills/bizdev
+- .claude/skills/bizdev/SKILL.md
+- .claude/skills/bizdev/templates/business-plan.md
+- .claude/skills/bizdev/templates/pitch-deck.md
+- .claude/skills/english-tutor
+- .claude/skills/english-tutor/SKILL.md
+- .claude/skills/grill-me
+- .claude/skills/grill-me/SKILL.md
+- .claude/skills/neovim
+- .claude/skills/neovim/SKILL.md
+- .claude/skills/review-pr
+- .claude/skills/review-pr/SKILL.md
+local_deployed_file_hashes:
+  .agents/skills/bizdev/SKILL.md: sha256:4978731e5f6d7e090f71409e6c781f096e359c746061ef84e583307061a9ec80
+  .agents/skills/bizdev/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
+  .agents/skills/bizdev/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
+  .agents/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
+  .agents/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
+  .agents/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
+  .agents/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
+  .claude/skills/bizdev/SKILL.md: sha256:4978731e5f6d7e090f71409e6c781f096e359c746061ef84e583307061a9ec80
+  .claude/skills/bizdev/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
+  .claude/skills/bizdev/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
+  .claude/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
+  .claude/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
+  .claude/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
+  .claude/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d

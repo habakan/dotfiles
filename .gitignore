@@ -1,1 +1,9 @@
 .gitconfig.local
+
+
+# APM dependencies
+apm_modules/
+
+# APM generated skill outputs (source of truth is .apm/skills; regenerate with `apm install`)
+.claude/skills/
+.agents/skills/
