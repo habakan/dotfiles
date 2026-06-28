@@ -1,7 +1,25 @@
 lockfile_version: '1'
-generated_at: '2026-06-28T01:39:14.067511+00:00'
+generated_at: '2026-06-28T04:08:18.433998+00:00'
 apm_version: 0.22.0
 dependencies:
+- repo_url: habakan/skills
+  name: skills
+  host: github.com
+  resolved_commit: f3243c2c7b813d9c51b8a9e908fe72839bba91ad
+  resolved_ref: f3243c2
+  version: unknown
+  virtual_path: meta/skill-editor
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/skill-editor
+  - .agents/skills/skill-editor/SKILL.md
+  - .claude/skills/skill-editor
+  - .claude/skills/skill-editor/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/skill-editor/SKILL.md: sha256:a1b1a71b2c76a6bc3aefb2b3beb93bde37e761a6bc544827d8bc228684532c58
+    .claude/skills/skill-editor/SKILL.md: sha256:a1b1a71b2c76a6bc3aefb2b3beb93bde37e761a6bc544827d8bc228684532c58
+  content_hash: sha256:51d6f466d1c1d6ebe16b9ba57012524038093d0468195209e673f0cb6bd36b76
 - repo_url: nulab/bee
   name: bee
   host: github.com

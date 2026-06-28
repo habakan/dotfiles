@@ -12,6 +12,7 @@ targets:
 dependencies:
   apm:
   - nulab/bee/skills/using-bee#276f55c7
+  - habakan/skills/meta/skill-editor#f3243c2
   mcp: []
 includes: auto
 scripts: {}
