@@ -1,6 +1,25 @@
 lockfile_version: '1'
-generated_at: '2026-06-27T02:49:38.901401+00:00'
-dependencies: []
+generated_at: '2026-06-28T01:23:42.176197+00:00'
+apm_version: 0.22.0
+dependencies:
+- repo_url: nulab/bee
+  name: using-bee
+  host: github.com
+  resolved_commit: 276f55c7a1e90d5cb6b7b82bb4ced06d8da51f34
+  resolved_ref: 276f55c7
+  version: 1.0.0
+  virtual_path: skills/using-bee
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/using-bee
+  - .agents/skills/using-bee/SKILL.md
+  - .claude/skills/using-bee
+  - .claude/skills/using-bee/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/using-bee/SKILL.md: sha256:4f02bd961901e346c6befe670207b3dc47a56efc215157b1bb06d24d73bc346b
+    .claude/skills/using-bee/SKILL.md: sha256:4f02bd961901e346c6befe670207b3dc47a56efc215157b1bb06d24d73bc346b
+  content_hash: sha256:d63b5876f86bc2c9ee272e0f4b9dc8185a15a6a92836e189564a7cdeb3e691ab
 local_deployed_files:
 - .agents/skills/bizdev
 - .agents/skills/bizdev/SKILL.md
