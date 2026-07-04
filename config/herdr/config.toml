@@ -10,6 +10,12 @@ detach = "prefix+d"
 # ペイン移動 h/j/k/l は herdr 既定が prefix+h/j/k/l で tmux(vi風)と一致するため設定不要
 # reload は既定 prefix+shift+r（prefix+r は resize_mode のため衝突回避で既定を維持）
 
+# エージェント切り替え（workspace/tab をまたいで agent 単位で移動）
+# 既定は未設定。pane 移動(h/j/k/l)や tab(p/n)と衝突しないキーを割当。
+previous_agent = "prefix+shift+k"   # 前のエージェントへ
+next_agent = "prefix+shift+j"       # 次のエージェントへ
+focus_agent = "prefix+alt+1..9"     # N 番目のエージェントへ直接ジャンプ
+
 [terminal]
 # tmux: default-shell $SHELL → herdr 既定が $SHELL のため指定不要
 
@@ -21,3 +27,7 @@ mouse_capture = true
 # 日本語IME併用対策（prefix が ctrl+t のため推奨）
 switch_ascii_input_source_in_prefix = true
 reveal_hidden_cursor_for_cjk_ime = true
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
