@@ -1,0 +1,23 @@
+# herdr configuration (migrated from .tmux.conf)
+
+[keys]
+# tmux: set -g prefix C-t
+prefix = "ctrl+t"
+
+# tmux: bind d detach-client （既定の prefix+q から変更）
+detach = "prefix+d"
+
+# ペイン移動 h/j/k/l は herdr 既定が prefix+h/j/k/l で tmux(vi風)と一致するため設定不要
+# reload は既定 prefix+shift+r（prefix+r は resize_mode のため衝突回避で既定を維持）
+
+[terminal]
+# tmux: default-shell $SHELL → herdr 既定が $SHELL のため指定不要
+
+[ui]
+# tmux: mouse on → 既定 true
+mouse_capture = true
+
+[experimental]
+# 日本語IME併用対策（prefix が ctrl+t のため推奨）
+switch_ascii_input_source_in_prefix = true
+reveal_hidden_cursor_for_cjk_ime = true
