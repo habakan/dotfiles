@@ -4,3 +4,4 @@
 [submodule ".apm/skills"]
 	path = .apm/skills
 	url = git@github.com:habakan/skills.git
+	branch = main
