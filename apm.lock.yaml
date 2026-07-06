@@ -63,6 +63,9 @@ local_deployed_files:
 - .agents/skills/pr-screen-scheduler/scripts/pr-screen.sh
 - .agents/skills/pr-screen-scheduler/templates/job.env.template
 - .agents/skills/pr-screen-scheduler/templates/launchagent.plist.template
+- .agents/skills/producthunt
+- .agents/skills/producthunt/SKILL.md
+- .agents/skills/producthunt/scripts/ph_fetch.py
 - .agents/skills/review-pr
 - .agents/skills/review-pr/SKILL.md
 - .claude/skills/bizplan
@@ -89,6 +92,9 @@ local_deployed_files:
 - .claude/skills/pr-screen-scheduler/scripts/pr-screen.sh
 - .claude/skills/pr-screen-scheduler/templates/job.env.template
 - .claude/skills/pr-screen-scheduler/templates/launchagent.plist.template
+- .claude/skills/producthunt
+- .claude/skills/producthunt/SKILL.md
+- .claude/skills/producthunt/scripts/ph_fetch.py
 - .claude/skills/review-pr
 - .claude/skills/review-pr/SKILL.md
 local_deployed_file_hashes:
@@ -110,6 +116,8 @@ local_deployed_file_hashes:
   .agents/skills/pr-screen-scheduler/scripts/pr-screen.sh: sha256:02ca98793a61c01d6eb2cd017d022dd1f9868012deb3cab42bf5ed5022e40518
   .agents/skills/pr-screen-scheduler/templates/job.env.template: sha256:ef2173ecfb1fe4c9c94f98246d66e31968a51a17e0ce86fa30d13903fcfffa99
   .agents/skills/pr-screen-scheduler/templates/launchagent.plist.template: sha256:49de9d2886cdeb260250c6cdae9b3e7aaf74b0e20e8e8994388cf3f9b3ece4a1
+  .agents/skills/producthunt/SKILL.md: sha256:9fbbea235d97d0c853d7dcc4dc47e288b8c6823c6c3b726a39b242ea6e0747d7
+  .agents/skills/producthunt/scripts/ph_fetch.py: sha256:19d3618dd8b5edd306093e88549f60f0beee1c55b3c51394f560d175573b65b6
   .agents/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
   .claude/skills/bizplan/SKILL.md: sha256:e9ff2a73a6a2ec7b385707fc5e4a0445fc461bdf2b846ed55167f487e23bc0c9
   .claude/skills/bizplan/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
@@ -129,4 +137,6 @@ local_deployed_file_hashes:
   .claude/skills/pr-screen-scheduler/scripts/pr-screen.sh: sha256:02ca98793a61c01d6eb2cd017d022dd1f9868012deb3cab42bf5ed5022e40518
   .claude/skills/pr-screen-scheduler/templates/job.env.template: sha256:ef2173ecfb1fe4c9c94f98246d66e31968a51a17e0ce86fa30d13903fcfffa99
   .claude/skills/pr-screen-scheduler/templates/launchagent.plist.template: sha256:49de9d2886cdeb260250c6cdae9b3e7aaf74b0e20e8e8994388cf3f9b3ece4a1
+  .claude/skills/producthunt/SKILL.md: sha256:9fbbea235d97d0c853d7dcc4dc47e288b8c6823c6c3b726a39b242ea6e0747d7
+  .claude/skills/producthunt/scripts/ph_fetch.py: sha256:19d3618dd8b5edd306093e88549f60f0beee1c55b3c51394f560d175573b65b6
   .claude/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
