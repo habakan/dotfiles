@@ -47,8 +47,22 @@ local_deployed_files:
 - .agents/skills/english-tutor/SKILL.md
 - .agents/skills/grill-me
 - .agents/skills/grill-me/SKILL.md
+- .agents/skills/kaggle
+- .agents/skills/kaggle/SKILL.md
+- .agents/skills/kaggle/references/competition-research.md
+- .agents/skills/kaggle/references/critical-thinking.md
+- .agents/skills/kaggle/references/idea-collection.md
+- .agents/skills/kaggle/references/submission-strategy.md
+- .agents/skills/kaggle/references/validation-strategy.md
+- .agents/skills/kaggle/references/when-stuck.md
+- .agents/skills/kaggle/templates/competition-plan.md
 - .agents/skills/neovim
 - .agents/skills/neovim/SKILL.md
+- .agents/skills/pr-screen-scheduler
+- .agents/skills/pr-screen-scheduler/SKILL.md
+- .agents/skills/pr-screen-scheduler/scripts/pr-screen.sh
+- .agents/skills/pr-screen-scheduler/templates/job.env.template
+- .agents/skills/pr-screen-scheduler/templates/launchagent.plist.template
 - .agents/skills/review-pr
 - .agents/skills/review-pr/SKILL.md
 - .claude/skills/bizplan
@@ -59,8 +73,22 @@ local_deployed_files:
 - .claude/skills/english-tutor/SKILL.md
 - .claude/skills/grill-me
 - .claude/skills/grill-me/SKILL.md
+- .claude/skills/kaggle
+- .claude/skills/kaggle/SKILL.md
+- .claude/skills/kaggle/references/competition-research.md
+- .claude/skills/kaggle/references/critical-thinking.md
+- .claude/skills/kaggle/references/idea-collection.md
+- .claude/skills/kaggle/references/submission-strategy.md
+- .claude/skills/kaggle/references/validation-strategy.md
+- .claude/skills/kaggle/references/when-stuck.md
+- .claude/skills/kaggle/templates/competition-plan.md
 - .claude/skills/neovim
 - .claude/skills/neovim/SKILL.md
+- .claude/skills/pr-screen-scheduler
+- .claude/skills/pr-screen-scheduler/SKILL.md
+- .claude/skills/pr-screen-scheduler/scripts/pr-screen.sh
+- .claude/skills/pr-screen-scheduler/templates/job.env.template
+- .claude/skills/pr-screen-scheduler/templates/launchagent.plist.template
 - .claude/skills/review-pr
 - .claude/skills/review-pr/SKILL.md
 local_deployed_file_hashes:
@@ -69,12 +97,36 @@ local_deployed_file_hashes:
   .agents/skills/bizplan/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
   .agents/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
   .agents/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
+  .agents/skills/kaggle/SKILL.md: sha256:5b2dfd55934101db39e2b8a663495680f52eaf3807887dacdd5ae40dbf3992a3
+  .agents/skills/kaggle/references/competition-research.md: sha256:22ac955a2bc1e7deee57d3cc0ff3045c68ffba770d1df75a27d94ee9c56b1fce
+  .agents/skills/kaggle/references/critical-thinking.md: sha256:b9e7f742aedbc485d5807f3188ec7a2dcaf438db0869799bc53fcc5b1fc16be1
+  .agents/skills/kaggle/references/idea-collection.md: sha256:b8f6a521fdc187f19b0ceefa4c3eb1f8c9cce72e2b1c53c29c34eb684ad08a9a
+  .agents/skills/kaggle/references/submission-strategy.md: sha256:52da360c64008190d0c30c72a5a433f40ad1f0ce55d9156f33acd3d11886d1fe
+  .agents/skills/kaggle/references/validation-strategy.md: sha256:795db76c8784ae099c5138e6b3cfb1944f52f806070e219dad2ccafc0be9b1ad
+  .agents/skills/kaggle/references/when-stuck.md: sha256:2c60eac3c629ed0b1a6a46857d19d58cdde14548aea2b274557c0714ca2827f4
+  .agents/skills/kaggle/templates/competition-plan.md: sha256:cccfe0e458a902766d22b950e759598b781ea1810ddfa1496a3280b3c6c842ba
   .agents/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
+  .agents/skills/pr-screen-scheduler/SKILL.md: sha256:ef4636ace9affb6f404382574f4e95698288e92fd98e05985e42118208b0eb68
+  .agents/skills/pr-screen-scheduler/scripts/pr-screen.sh: sha256:02ca98793a61c01d6eb2cd017d022dd1f9868012deb3cab42bf5ed5022e40518
+  .agents/skills/pr-screen-scheduler/templates/job.env.template: sha256:ef2173ecfb1fe4c9c94f98246d66e31968a51a17e0ce86fa30d13903fcfffa99
+  .agents/skills/pr-screen-scheduler/templates/launchagent.plist.template: sha256:49de9d2886cdeb260250c6cdae9b3e7aaf74b0e20e8e8994388cf3f9b3ece4a1
   .agents/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
   .claude/skills/bizplan/SKILL.md: sha256:e9ff2a73a6a2ec7b385707fc5e4a0445fc461bdf2b846ed55167f487e23bc0c9
   .claude/skills/bizplan/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
   .claude/skills/bizplan/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
   .claude/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
   .claude/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
+  .claude/skills/kaggle/SKILL.md: sha256:5b2dfd55934101db39e2b8a663495680f52eaf3807887dacdd5ae40dbf3992a3
+  .claude/skills/kaggle/references/competition-research.md: sha256:22ac955a2bc1e7deee57d3cc0ff3045c68ffba770d1df75a27d94ee9c56b1fce
+  .claude/skills/kaggle/references/critical-thinking.md: sha256:b9e7f742aedbc485d5807f3188ec7a2dcaf438db0869799bc53fcc5b1fc16be1
+  .claude/skills/kaggle/references/idea-collection.md: sha256:b8f6a521fdc187f19b0ceefa4c3eb1f8c9cce72e2b1c53c29c34eb684ad08a9a
+  .claude/skills/kaggle/references/submission-strategy.md: sha256:52da360c64008190d0c30c72a5a433f40ad1f0ce55d9156f33acd3d11886d1fe
+  .claude/skills/kaggle/references/validation-strategy.md: sha256:795db76c8784ae099c5138e6b3cfb1944f52f806070e219dad2ccafc0be9b1ad
+  .claude/skills/kaggle/references/when-stuck.md: sha256:2c60eac3c629ed0b1a6a46857d19d58cdde14548aea2b274557c0714ca2827f4
+  .claude/skills/kaggle/templates/competition-plan.md: sha256:cccfe0e458a902766d22b950e759598b781ea1810ddfa1496a3280b3c6c842ba
   .claude/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
+  .claude/skills/pr-screen-scheduler/SKILL.md: sha256:ef4636ace9affb6f404382574f4e95698288e92fd98e05985e42118208b0eb68
+  .claude/skills/pr-screen-scheduler/scripts/pr-screen.sh: sha256:02ca98793a61c01d6eb2cd017d022dd1f9868012deb3cab42bf5ed5022e40518
+  .claude/skills/pr-screen-scheduler/templates/job.env.template: sha256:ef2173ecfb1fe4c9c94f98246d66e31968a51a17e0ce86fa30d13903fcfffa99
+  .claude/skills/pr-screen-scheduler/templates/launchagent.plist.template: sha256:49de9d2886cdeb260250c6cdae9b3e7aaf74b0e20e8e8994388cf3f9b3ece4a1
   .claude/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
