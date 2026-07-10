@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Plan Loop"
+  short_description: "Research-driven critical business planning"
+  default_prompt: "Use $business-plan-loop to research, stress-test, and summarize my business plan."
