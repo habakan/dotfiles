@@ -110,12 +110,12 @@ local_deployed_files:
 - .claude/skills/ui-ux-loop/references/agent-contracts.md
 - .claude/skills/ui-ux-loop/references/run-protocol.md
 local_deployed_file_hashes:
-  .agents/skills/analysis-plan/SKILL.md: sha256:95bc716411b80878dbd506ed5594f02a04f24a0f3413ac905df7ab3721cc1633
+  .agents/skills/analysis-plan/SKILL.md: sha256:f260ede19cec833bc199ac6575e42b3273b4fd0f46ff32a5fb5b246636af60db
   .agents/skills/analysis-plan/references/item-catalog.md: sha256:1d5f629cc03206d73e191f3886e0cd7c5c3420fa91b5a91f624918d3d42a8aa3
   .agents/skills/analysis-plan/references/item-spec.md: sha256:ce9e82e7869eb630216fbad34732b2f46db5b977b19b22fdbf3f543b164131e2
-  .agents/skills/analysis-plan/scripts/render_board.py: sha256:a864b32fae0f0500f04d5779d5e85f484de1e9048e43226cc38b2656142383a7
-  .agents/skills/analysis-plan/templates/board.html: sha256:112d46337c5115dc527e8ee699eec123b3b26f3c358852196a3e664f6cdd1347
-  .agents/skills/analysis-plan/templates/plan.yaml: sha256:e720f765edc49e7a515abf14d0f56ac8ef722c91b636dfe56e697cd0dadaab18
+  .agents/skills/analysis-plan/scripts/render_board.py: sha256:2e1ed00c0d766aa6578c4e91d37b87ead1bdd482c9eaf3104ad3faec584ba7da
+  .agents/skills/analysis-plan/templates/board.html: sha256:3e69db6d075d325fb732d879ccfdd427e01847903c5c12212b647485389367ed
+  .agents/skills/analysis-plan/templates/plan.yaml: sha256:2fd8f56301bae56e794b70965c10b2ef8f036fb8e24ab27035e8213cf0036076
   .agents/skills/bizplan/SKILL.md: sha256:e9ff2a73a6a2ec7b385707fc5e4a0445fc461bdf2b846ed55167f487e23bc0c9
   .agents/skills/bizplan/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
   .agents/skills/bizplan/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
@@ -137,12 +137,12 @@ local_deployed_file_hashes:
   .agents/skills/ui-ux-loop/agents/openai.yaml: sha256:c6ce1802b079c350d96ea04022a8a899b235f44664e628c753521eb6eae0f1f3
   .agents/skills/ui-ux-loop/references/agent-contracts.md: sha256:85ea9a966ef84235fd98e8a4f6833c56680c4dd486aec71de07ff8b13863f79d
   .agents/skills/ui-ux-loop/references/run-protocol.md: sha256:29ce8bb91a70d5297bd19e8da9b11b9f10f7ee66a7518a406cb5d0971b09f957
-  .claude/skills/analysis-plan/SKILL.md: sha256:95bc716411b80878dbd506ed5594f02a04f24a0f3413ac905df7ab3721cc1633
+  .claude/skills/analysis-plan/SKILL.md: sha256:f260ede19cec833bc199ac6575e42b3273b4fd0f46ff32a5fb5b246636af60db
   .claude/skills/analysis-plan/references/item-catalog.md: sha256:1d5f629cc03206d73e191f3886e0cd7c5c3420fa91b5a91f624918d3d42a8aa3
   .claude/skills/analysis-plan/references/item-spec.md: sha256:ce9e82e7869eb630216fbad34732b2f46db5b977b19b22fdbf3f543b164131e2
-  .claude/skills/analysis-plan/scripts/render_board.py: sha256:a864b32fae0f0500f04d5779d5e85f484de1e9048e43226cc38b2656142383a7
-  .claude/skills/analysis-plan/templates/board.html: sha256:112d46337c5115dc527e8ee699eec123b3b26f3c358852196a3e664f6cdd1347
-  .claude/skills/analysis-plan/templates/plan.yaml: sha256:e720f765edc49e7a515abf14d0f56ac8ef722c91b636dfe56e697cd0dadaab18
+  .claude/skills/analysis-plan/scripts/render_board.py: sha256:2e1ed00c0d766aa6578c4e91d37b87ead1bdd482c9eaf3104ad3faec584ba7da
+  .claude/skills/analysis-plan/templates/board.html: sha256:3e69db6d075d325fb732d879ccfdd427e01847903c5c12212b647485389367ed
+  .claude/skills/analysis-plan/templates/plan.yaml: sha256:2fd8f56301bae56e794b70965c10b2ef8f036fb8e24ab27035e8213cf0036076
   .claude/skills/bizplan/SKILL.md: sha256:e9ff2a73a6a2ec7b385707fc5e4a0445fc461bdf2b846ed55167f487e23bc0c9
   .claude/skills/bizplan/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
   .claude/skills/bizplan/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
