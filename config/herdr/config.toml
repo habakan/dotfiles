@@ -16,12 +16,28 @@ previous_agent = "prefix+shift+k"   # 前のエージェントへ
 next_agent = "prefix+shift+j"       # 次のエージェントへ
 focus_agent = "prefix+alt+1..9"     # N 番目のエージェントへ直接ジャンプ
 
+[[keys.command]]
+key = "prefix+alt+s"
+type = "popup"
+command = "$HOME/bin/herdr-agent-status-log show; printf '\\npress enter to close '; read _"
+description = "show agent status change log"
+width = "90%"
+height = "70%"
+
 [terminal]
 # tmux: default-shell $SHELL → herdr 既定が $SHELL のため指定不要
 
 [ui]
 # tmux: mouse on → 既定 true
 mouse_capture = true
+
+agent_panel_sort = "spaces"
+[ui.sidebar.agents]
+rows = [
+  ["state_icon", "state_text", "$status_since"],
+  ["workspace", "tab"],
+  ["agent"],
+]
 
 [experimental]
 # 日本語IME併用対策（prefix が ctrl+t のため推奨）
