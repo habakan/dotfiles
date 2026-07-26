@@ -48,6 +48,10 @@ local_deployed_files:
 - .agents/skills/grill-me
 - .agents/skills/grill-me/SKILL.md
 - .agents/skills/kaggle
+- .agents/skills/kaggle-x-research
+- .agents/skills/kaggle-x-research/SKILL.md
+- .agents/skills/kaggle-x-research/references/x-query-playbook.md
+- .agents/skills/kaggle-x-research/templates/x-research-report.md
 - .agents/skills/kaggle/SKILL.md
 - .agents/skills/kaggle/references/competition-research.md
 - .agents/skills/kaggle/references/competitor-profiling.md
@@ -57,16 +61,9 @@ local_deployed_files:
 - .agents/skills/kaggle/references/validation-strategy.md
 - .agents/skills/kaggle/references/when-stuck.md
 - .agents/skills/kaggle/templates/competition-plan.md
+- .agents/skills/kaggle/templates/project-structure.md
 - .agents/skills/neovim
 - .agents/skills/neovim/SKILL.md
-- .agents/skills/pr-screen-scheduler
-- .agents/skills/pr-screen-scheduler/SKILL.md
-- .agents/skills/pr-screen-scheduler/scripts/pr-screen.sh
-- .agents/skills/pr-screen-scheduler/templates/job.env.template
-- .agents/skills/pr-screen-scheduler/templates/launchagent.plist.template
-- .agents/skills/producthunt
-- .agents/skills/producthunt/SKILL.md
-- .agents/skills/producthunt/scripts/ph_fetch.py
 - .agents/skills/review-pr
 - .agents/skills/review-pr/SKILL.md
 - .agents/skills/ui-ux-loop
@@ -74,12 +71,6 @@ local_deployed_files:
 - .agents/skills/ui-ux-loop/agents/openai.yaml
 - .agents/skills/ui-ux-loop/references/agent-contracts.md
 - .agents/skills/ui-ux-loop/references/run-protocol.md
-- .agents/skills/user-story-map
-- .agents/skills/user-story-map/SKILL.md
-- .agents/skills/user-story-map/references/method.md
-- .agents/skills/user-story-map/scripts/build_story_map.py
-- .agents/skills/user-story-map/scripts/story-map.example.json
-- .agents/skills/user-story-map/templates/story.md
 - .claude/skills/bizplan
 - .claude/skills/bizplan/SKILL.md
 - .claude/skills/bizplan/templates/business-plan.md
@@ -89,6 +80,10 @@ local_deployed_files:
 - .claude/skills/grill-me
 - .claude/skills/grill-me/SKILL.md
 - .claude/skills/kaggle
+- .claude/skills/kaggle-x-research
+- .claude/skills/kaggle-x-research/SKILL.md
+- .claude/skills/kaggle-x-research/references/x-query-playbook.md
+- .claude/skills/kaggle-x-research/templates/x-research-report.md
 - .claude/skills/kaggle/SKILL.md
 - .claude/skills/kaggle/references/competition-research.md
 - .claude/skills/kaggle/references/competitor-profiling.md
@@ -98,16 +93,9 @@ local_deployed_files:
 - .claude/skills/kaggle/references/validation-strategy.md
 - .claude/skills/kaggle/references/when-stuck.md
 - .claude/skills/kaggle/templates/competition-plan.md
+- .claude/skills/kaggle/templates/project-structure.md
 - .claude/skills/neovim
 - .claude/skills/neovim/SKILL.md
-- .claude/skills/pr-screen-scheduler
-- .claude/skills/pr-screen-scheduler/SKILL.md
-- .claude/skills/pr-screen-scheduler/scripts/pr-screen.sh
-- .claude/skills/pr-screen-scheduler/templates/job.env.template
-- .claude/skills/pr-screen-scheduler/templates/launchagent.plist.template
-- .claude/skills/producthunt
-- .claude/skills/producthunt/SKILL.md
-- .claude/skills/producthunt/scripts/ph_fetch.py
 - .claude/skills/review-pr
 - .claude/skills/review-pr/SKILL.md
 - .claude/skills/ui-ux-loop
@@ -115,72 +103,52 @@ local_deployed_files:
 - .claude/skills/ui-ux-loop/agents/openai.yaml
 - .claude/skills/ui-ux-loop/references/agent-contracts.md
 - .claude/skills/ui-ux-loop/references/run-protocol.md
-- .claude/skills/user-story-map
-- .claude/skills/user-story-map/SKILL.md
-- .claude/skills/user-story-map/references/method.md
-- .claude/skills/user-story-map/scripts/build_story_map.py
-- .claude/skills/user-story-map/scripts/story-map.example.json
-- .claude/skills/user-story-map/templates/story.md
 local_deployed_file_hashes:
   .agents/skills/bizplan/SKILL.md: sha256:e9ff2a73a6a2ec7b385707fc5e4a0445fc461bdf2b846ed55167f487e23bc0c9
   .agents/skills/bizplan/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
   .agents/skills/bizplan/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
   .agents/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
   .agents/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
-  .agents/skills/kaggle/SKILL.md: sha256:6a37f20f731de90513d81f7d446ffddbf7429ed33f370da68bbc7c5c84e11ec8
-  .agents/skills/kaggle/references/competition-research.md: sha256:22ac955a2bc1e7deee57d3cc0ff3045c68ffba770d1df75a27d94ee9c56b1fce
-  .agents/skills/kaggle/references/competitor-profiling.md: sha256:2f6b802bc202f8672089a37091ec0639f51217baf7600e717c9655f49ef799e0
-  .agents/skills/kaggle/references/critical-thinking.md: sha256:b9e7f742aedbc485d5807f3188ec7a2dcaf438db0869799bc53fcc5b1fc16be1
-  .agents/skills/kaggle/references/idea-collection.md: sha256:b8f6a521fdc187f19b0ceefa4c3eb1f8c9cce72e2b1c53c29c34eb684ad08a9a
+  .agents/skills/kaggle-x-research/SKILL.md: sha256:8d91e4c78d31e9de6022630baf6460b1b1a457ada985621535f43749215c4157
+  .agents/skills/kaggle-x-research/references/x-query-playbook.md: sha256:526e5b6fb934ccae95691e936fe48a373484c1d42ad52a9cf8411a7466c2bb1b
+  .agents/skills/kaggle-x-research/templates/x-research-report.md: sha256:646ab099411b8f0e4aedab046dfbaaeb0935cabdf84bc2f927f65f146cb2c824
+  .agents/skills/kaggle/SKILL.md: sha256:837656de79caf001d9944e725747ae3d0b586a6a16f338c4c06203afc24c11ac
+  .agents/skills/kaggle/references/competition-research.md: sha256:81b952f26c8c8a54dd6f2cd625a85f640444bf9ff58cc33370b962a01c302480
+  .agents/skills/kaggle/references/competitor-profiling.md: sha256:4356dd8cfbeec9215dddde48cb19027f8a04ab9fbc16a6ae98fbc3ff50044a79
+  .agents/skills/kaggle/references/critical-thinking.md: sha256:f66adee574b63726e837b5896fb39c3aae0dcfe1f03bc344c66a57b1449004ff
+  .agents/skills/kaggle/references/idea-collection.md: sha256:7cbed2a6010060b722593e10877f7d35c7dbc18282760036db620ca7cb1cbf74
   .agents/skills/kaggle/references/submission-strategy.md: sha256:52da360c64008190d0c30c72a5a433f40ad1f0ce55d9156f33acd3d11886d1fe
   .agents/skills/kaggle/references/validation-strategy.md: sha256:795db76c8784ae099c5138e6b3cfb1944f52f806070e219dad2ccafc0be9b1ad
   .agents/skills/kaggle/references/when-stuck.md: sha256:2c60eac3c629ed0b1a6a46857d19d58cdde14548aea2b274557c0714ca2827f4
-  .agents/skills/kaggle/templates/competition-plan.md: sha256:cccfe0e458a902766d22b950e759598b781ea1810ddfa1496a3280b3c6c842ba
+  .agents/skills/kaggle/templates/competition-plan.md: sha256:e214ace44860e2884c3e010e4ef2ee46d8e5db5cb3b8a2c09e54db63518f4ee9
+  .agents/skills/kaggle/templates/project-structure.md: sha256:8cef232d2a591f74369bf20ad4b757eb6a9f5216ed6b2ceb780b036e09ebcb48
   .agents/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
-  .agents/skills/pr-screen-scheduler/SKILL.md: sha256:ef4636ace9affb6f404382574f4e95698288e92fd98e05985e42118208b0eb68
-  .agents/skills/pr-screen-scheduler/scripts/pr-screen.sh: sha256:02ca98793a61c01d6eb2cd017d022dd1f9868012deb3cab42bf5ed5022e40518
-  .agents/skills/pr-screen-scheduler/templates/job.env.template: sha256:ef2173ecfb1fe4c9c94f98246d66e31968a51a17e0ce86fa30d13903fcfffa99
-  .agents/skills/pr-screen-scheduler/templates/launchagent.plist.template: sha256:49de9d2886cdeb260250c6cdae9b3e7aaf74b0e20e8e8994388cf3f9b3ece4a1
-  .agents/skills/producthunt/SKILL.md: sha256:9fbbea235d97d0c853d7dcc4dc47e288b8c6823c6c3b726a39b242ea6e0747d7
-  .agents/skills/producthunt/scripts/ph_fetch.py: sha256:19d3618dd8b5edd306093e88549f60f0beee1c55b3c51394f560d175573b65b6
   .agents/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
   .agents/skills/ui-ux-loop/SKILL.md: sha256:ac9d413c3d5a9e82fdb1e70333482612845bdcbb890a6a51c6c94631d0da4196
   .agents/skills/ui-ux-loop/agents/openai.yaml: sha256:c6ce1802b079c350d96ea04022a8a899b235f44664e628c753521eb6eae0f1f3
   .agents/skills/ui-ux-loop/references/agent-contracts.md: sha256:85ea9a966ef84235fd98e8a4f6833c56680c4dd486aec71de07ff8b13863f79d
   .agents/skills/ui-ux-loop/references/run-protocol.md: sha256:29ce8bb91a70d5297bd19e8da9b11b9f10f7ee66a7518a406cb5d0971b09f957
-  .agents/skills/user-story-map/SKILL.md: sha256:7c499ebb4216420a7b96962341ad11643256a3a88c49b23ec6ac81f86a762c9a
-  .agents/skills/user-story-map/references/method.md: sha256:54958e2113d035bea0c7f5d82834b00e5dd355da6c2d86da9279712487c02088
-  .agents/skills/user-story-map/scripts/build_story_map.py: sha256:8e79ca85cddba9a9c1f258d29dd6207109a5e7603dbbf5894e4b4d72a9f931b7
-  .agents/skills/user-story-map/scripts/story-map.example.json: sha256:1e68676aaf3e4ffeb7ab60f64575c007dda2671850905e1cbab8eee3e449faea
-  .agents/skills/user-story-map/templates/story.md: sha256:854927a3316cc56d114fc8032e233fb76f60065f4bb6138eaa58acee1cc8f599
   .claude/skills/bizplan/SKILL.md: sha256:e9ff2a73a6a2ec7b385707fc5e4a0445fc461bdf2b846ed55167f487e23bc0c9
   .claude/skills/bizplan/templates/business-plan.md: sha256:e340a8842154bb08430e67e72e4b686a51bbda2c201e95276a4deffd2301efca
   .claude/skills/bizplan/templates/pitch-deck.md: sha256:030c38010e4309843a4c52f32beb8e623df47248bda3de2d35c0d5a2dc5d748c
   .claude/skills/english-tutor/SKILL.md: sha256:c815141b4436545d6e716132bf48b3dbb87fea419289d9f4910a28b27f8274ee
   .claude/skills/grill-me/SKILL.md: sha256:d3cffaeb1dd12f305bda7bbce7e36e2c26e104f73ef90c8fe65f6d70622909a9
-  .claude/skills/kaggle/SKILL.md: sha256:6a37f20f731de90513d81f7d446ffddbf7429ed33f370da68bbc7c5c84e11ec8
-  .claude/skills/kaggle/references/competition-research.md: sha256:22ac955a2bc1e7deee57d3cc0ff3045c68ffba770d1df75a27d94ee9c56b1fce
-  .claude/skills/kaggle/references/competitor-profiling.md: sha256:2f6b802bc202f8672089a37091ec0639f51217baf7600e717c9655f49ef799e0
-  .claude/skills/kaggle/references/critical-thinking.md: sha256:b9e7f742aedbc485d5807f3188ec7a2dcaf438db0869799bc53fcc5b1fc16be1
-  .claude/skills/kaggle/references/idea-collection.md: sha256:b8f6a521fdc187f19b0ceefa4c3eb1f8c9cce72e2b1c53c29c34eb684ad08a9a
+  .claude/skills/kaggle-x-research/SKILL.md: sha256:8d91e4c78d31e9de6022630baf6460b1b1a457ada985621535f43749215c4157
+  .claude/skills/kaggle-x-research/references/x-query-playbook.md: sha256:526e5b6fb934ccae95691e936fe48a373484c1d42ad52a9cf8411a7466c2bb1b
+  .claude/skills/kaggle-x-research/templates/x-research-report.md: sha256:646ab099411b8f0e4aedab046dfbaaeb0935cabdf84bc2f927f65f146cb2c824
+  .claude/skills/kaggle/SKILL.md: sha256:837656de79caf001d9944e725747ae3d0b586a6a16f338c4c06203afc24c11ac
+  .claude/skills/kaggle/references/competition-research.md: sha256:81b952f26c8c8a54dd6f2cd625a85f640444bf9ff58cc33370b962a01c302480
+  .claude/skills/kaggle/references/competitor-profiling.md: sha256:4356dd8cfbeec9215dddde48cb19027f8a04ab9fbc16a6ae98fbc3ff50044a79
+  .claude/skills/kaggle/references/critical-thinking.md: sha256:f66adee574b63726e837b5896fb39c3aae0dcfe1f03bc344c66a57b1449004ff
+  .claude/skills/kaggle/references/idea-collection.md: sha256:7cbed2a6010060b722593e10877f7d35c7dbc18282760036db620ca7cb1cbf74
   .claude/skills/kaggle/references/submission-strategy.md: sha256:52da360c64008190d0c30c72a5a433f40ad1f0ce55d9156f33acd3d11886d1fe
   .claude/skills/kaggle/references/validation-strategy.md: sha256:795db76c8784ae099c5138e6b3cfb1944f52f806070e219dad2ccafc0be9b1ad
   .claude/skills/kaggle/references/when-stuck.md: sha256:2c60eac3c629ed0b1a6a46857d19d58cdde14548aea2b274557c0714ca2827f4
-  .claude/skills/kaggle/templates/competition-plan.md: sha256:cccfe0e458a902766d22b950e759598b781ea1810ddfa1496a3280b3c6c842ba
+  .claude/skills/kaggle/templates/competition-plan.md: sha256:e214ace44860e2884c3e010e4ef2ee46d8e5db5cb3b8a2c09e54db63518f4ee9
+  .claude/skills/kaggle/templates/project-structure.md: sha256:8cef232d2a591f74369bf20ad4b757eb6a9f5216ed6b2ceb780b036e09ebcb48
   .claude/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
-  .claude/skills/pr-screen-scheduler/SKILL.md: sha256:ef4636ace9affb6f404382574f4e95698288e92fd98e05985e42118208b0eb68
-  .claude/skills/pr-screen-scheduler/scripts/pr-screen.sh: sha256:02ca98793a61c01d6eb2cd017d022dd1f9868012deb3cab42bf5ed5022e40518
-  .claude/skills/pr-screen-scheduler/templates/job.env.template: sha256:ef2173ecfb1fe4c9c94f98246d66e31968a51a17e0ce86fa30d13903fcfffa99
-  .claude/skills/pr-screen-scheduler/templates/launchagent.plist.template: sha256:49de9d2886cdeb260250c6cdae9b3e7aaf74b0e20e8e8994388cf3f9b3ece4a1
-  .claude/skills/producthunt/SKILL.md: sha256:9fbbea235d97d0c853d7dcc4dc47e288b8c6823c6c3b726a39b242ea6e0747d7
-  .claude/skills/producthunt/scripts/ph_fetch.py: sha256:19d3618dd8b5edd306093e88549f60f0beee1c55b3c51394f560d175573b65b6
   .claude/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
   .claude/skills/ui-ux-loop/SKILL.md: sha256:ac9d413c3d5a9e82fdb1e70333482612845bdcbb890a6a51c6c94631d0da4196
   .claude/skills/ui-ux-loop/agents/openai.yaml: sha256:c6ce1802b079c350d96ea04022a8a899b235f44664e628c753521eb6eae0f1f3
   .claude/skills/ui-ux-loop/references/agent-contracts.md: sha256:85ea9a966ef84235fd98e8a4f6833c56680c4dd486aec71de07ff8b13863f79d
   .claude/skills/ui-ux-loop/references/run-protocol.md: sha256:29ce8bb91a70d5297bd19e8da9b11b9f10f7ee66a7518a406cb5d0971b09f957
-  .claude/skills/user-story-map/SKILL.md: sha256:7c499ebb4216420a7b96962341ad11643256a3a88c49b23ec6ac81f86a762c9a
-  .claude/skills/user-story-map/references/method.md: sha256:54958e2113d035bea0c7f5d82834b00e5dd355da6c2d86da9279712487c02088
-  .claude/skills/user-story-map/scripts/build_story_map.py: sha256:8e79ca85cddba9a9c1f258d29dd6207109a5e7603dbbf5894e4b4d72a9f931b7
-  .claude/skills/user-story-map/scripts/story-map.example.json: sha256:1e68676aaf3e4ffeb7ab60f64575c007dda2671850905e1cbab8eee3e449faea
-  .claude/skills/user-story-map/templates/story.md: sha256:854927a3316cc56d114fc8032e233fb76f60065f4bb6138eaa58acee1cc8f599
