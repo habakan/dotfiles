@@ -27,6 +27,17 @@ apm install                                                 # external skills on
 make skills                                                 # symlink both into the clients
 ```
 
+## Agent configuration
+
+**This repository is public. Do not put agent configuration content here.**
+
+Claude Code and Codex settings live in `agent-config/`, a private submodule
+(`habakan/agent-config`). `make agents` symlinks it into `~/.claude` and `~/.codex`.
+See that repo's README for the layout and for what is shared vs per-client.
+
+Edit the files inside `agent-config/` and commit in that submodule — the parent
+only tracks the pointer.
+
 ## Skills
 
 Own skills and external skills are managed separately. They are authored once and used by
