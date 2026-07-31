@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-06-28T04:08:18.433998+00:00'
+generated_at: '2026-07-31T00:59:45.540132+00:00'
 apm_version: 0.22.0
 dependencies:
 - repo_url: habakan/skills
@@ -20,6 +20,32 @@ dependencies:
     .agents/skills/skill-editor/SKILL.md: sha256:a1b1a71b2c76a6bc3aefb2b3beb93bde37e761a6bc544827d8bc228684532c58
     .claude/skills/skill-editor/SKILL.md: sha256:a1b1a71b2c76a6bc3aefb2b3beb93bde37e761a6bc544827d8bc228684532c58
   content_hash: sha256:51d6f466d1c1d6ebe16b9ba57012524038093d0468195209e673f0cb6bd36b76
+- repo_url: habakan/skills
+  name: skills
+  host: github.com
+  resolved_commit: 539d0b20bc6f590300865d0eb1f2c4b806e9aa23
+  resolved_ref: 539d0b2
+  version: unknown
+  virtual_path: meta/skill-map
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/skill-map
+  - .agents/skills/skill-map/SKILL.md
+  - .agents/skills/skill-map/templates/skill-map.md
+  - .agents/skills/skill-map/templates/viewer.html
+  - .claude/skills/skill-map
+  - .claude/skills/skill-map/SKILL.md
+  - .claude/skills/skill-map/templates/skill-map.md
+  - .claude/skills/skill-map/templates/viewer.html
+  deployed_file_hashes:
+    .agents/skills/skill-map/SKILL.md: sha256:08ecfede425ee5ff790e2c482f029f8b6fe89937cfd5b6cf20eb0a64f70fd79a
+    .agents/skills/skill-map/templates/skill-map.md: sha256:90c5aec5121cd4b86a9baf23f4c819610616a01b9f243b93c91e6ed3da789362
+    .agents/skills/skill-map/templates/viewer.html: sha256:9c11ea31dba3e0307f9d106edf51bbe09de20c5163a271332a2482ab7a481f8e
+    .claude/skills/skill-map/SKILL.md: sha256:08ecfede425ee5ff790e2c482f029f8b6fe89937cfd5b6cf20eb0a64f70fd79a
+    .claude/skills/skill-map/templates/skill-map.md: sha256:90c5aec5121cd4b86a9baf23f4c819610616a01b9f243b93c91e6ed3da789362
+    .claude/skills/skill-map/templates/viewer.html: sha256:9c11ea31dba3e0307f9d106edf51bbe09de20c5163a271332a2482ab7a481f8e
+  content_hash: sha256:e7537bcd0cb2742db70761c6da514b6ee9744ae79d1bcb23109e9bd7bab2e6df
 - repo_url: nulab/bee
   name: bee
   host: github.com
@@ -60,6 +86,7 @@ local_deployed_files:
 - .agents/skills/kaggle/references/submission-strategy.md
 - .agents/skills/kaggle/references/validation-strategy.md
 - .agents/skills/kaggle/references/when-stuck.md
+- .agents/skills/kaggle/references/workflow-graph.md
 - .agents/skills/kaggle/templates/competition-plan.md
 - .agents/skills/kaggle/templates/project-structure.md
 - .agents/skills/neovim
@@ -92,6 +119,7 @@ local_deployed_files:
 - .claude/skills/kaggle/references/submission-strategy.md
 - .claude/skills/kaggle/references/validation-strategy.md
 - .claude/skills/kaggle/references/when-stuck.md
+- .claude/skills/kaggle/references/workflow-graph.md
 - .claude/skills/kaggle/templates/competition-plan.md
 - .claude/skills/kaggle/templates/project-structure.md
 - .claude/skills/neovim
@@ -112,15 +140,16 @@ local_deployed_file_hashes:
   .agents/skills/kaggle-x-research/SKILL.md: sha256:8d91e4c78d31e9de6022630baf6460b1b1a457ada985621535f43749215c4157
   .agents/skills/kaggle-x-research/references/x-query-playbook.md: sha256:526e5b6fb934ccae95691e936fe48a373484c1d42ad52a9cf8411a7466c2bb1b
   .agents/skills/kaggle-x-research/templates/x-research-report.md: sha256:646ab099411b8f0e4aedab046dfbaaeb0935cabdf84bc2f927f65f146cb2c824
-  .agents/skills/kaggle/SKILL.md: sha256:837656de79caf001d9944e725747ae3d0b586a6a16f338c4c06203afc24c11ac
+  .agents/skills/kaggle/SKILL.md: sha256:cfb9469323fb4a4b67d379106d884b37d033ab03ea0e3ab83ad6d6aaf5cdad61
   .agents/skills/kaggle/references/competition-research.md: sha256:81b952f26c8c8a54dd6f2cd625a85f640444bf9ff58cc33370b962a01c302480
   .agents/skills/kaggle/references/competitor-profiling.md: sha256:4356dd8cfbeec9215dddde48cb19027f8a04ab9fbc16a6ae98fbc3ff50044a79
   .agents/skills/kaggle/references/critical-thinking.md: sha256:f66adee574b63726e837b5896fb39c3aae0dcfe1f03bc344c66a57b1449004ff
-  .agents/skills/kaggle/references/idea-collection.md: sha256:7cbed2a6010060b722593e10877f7d35c7dbc18282760036db620ca7cb1cbf74
+  .agents/skills/kaggle/references/idea-collection.md: sha256:c77eff1629892023e090ff1c11cc053f028ba32ed7407be2d5407c463f577b89
   .agents/skills/kaggle/references/submission-strategy.md: sha256:52da360c64008190d0c30c72a5a433f40ad1f0ce55d9156f33acd3d11886d1fe
   .agents/skills/kaggle/references/validation-strategy.md: sha256:795db76c8784ae099c5138e6b3cfb1944f52f806070e219dad2ccafc0be9b1ad
-  .agents/skills/kaggle/references/when-stuck.md: sha256:2c60eac3c629ed0b1a6a46857d19d58cdde14548aea2b274557c0714ca2827f4
-  .agents/skills/kaggle/templates/competition-plan.md: sha256:e214ace44860e2884c3e010e4ef2ee46d8e5db5cb3b8a2c09e54db63518f4ee9
+  .agents/skills/kaggle/references/when-stuck.md: sha256:e1e7b9e0c38238d32cf24250dd93e06c10955a0d3943010c89a186706bee3cf2
+  .agents/skills/kaggle/references/workflow-graph.md: sha256:872b569232604877c694950624980b8b48e29225f995d8d89afcd97b4142aa73
+  .agents/skills/kaggle/templates/competition-plan.md: sha256:09d8dabda17d447140f38ebf2b1ba799c945252d5e42125196cb4090a5192446
   .agents/skills/kaggle/templates/project-structure.md: sha256:8cef232d2a591f74369bf20ad4b757eb6a9f5216ed6b2ceb780b036e09ebcb48
   .agents/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
   .agents/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
@@ -136,15 +165,16 @@ local_deployed_file_hashes:
   .claude/skills/kaggle-x-research/SKILL.md: sha256:8d91e4c78d31e9de6022630baf6460b1b1a457ada985621535f43749215c4157
   .claude/skills/kaggle-x-research/references/x-query-playbook.md: sha256:526e5b6fb934ccae95691e936fe48a373484c1d42ad52a9cf8411a7466c2bb1b
   .claude/skills/kaggle-x-research/templates/x-research-report.md: sha256:646ab099411b8f0e4aedab046dfbaaeb0935cabdf84bc2f927f65f146cb2c824
-  .claude/skills/kaggle/SKILL.md: sha256:837656de79caf001d9944e725747ae3d0b586a6a16f338c4c06203afc24c11ac
+  .claude/skills/kaggle/SKILL.md: sha256:cfb9469323fb4a4b67d379106d884b37d033ab03ea0e3ab83ad6d6aaf5cdad61
   .claude/skills/kaggle/references/competition-research.md: sha256:81b952f26c8c8a54dd6f2cd625a85f640444bf9ff58cc33370b962a01c302480
   .claude/skills/kaggle/references/competitor-profiling.md: sha256:4356dd8cfbeec9215dddde48cb19027f8a04ab9fbc16a6ae98fbc3ff50044a79
   .claude/skills/kaggle/references/critical-thinking.md: sha256:f66adee574b63726e837b5896fb39c3aae0dcfe1f03bc344c66a57b1449004ff
-  .claude/skills/kaggle/references/idea-collection.md: sha256:7cbed2a6010060b722593e10877f7d35c7dbc18282760036db620ca7cb1cbf74
+  .claude/skills/kaggle/references/idea-collection.md: sha256:c77eff1629892023e090ff1c11cc053f028ba32ed7407be2d5407c463f577b89
   .claude/skills/kaggle/references/submission-strategy.md: sha256:52da360c64008190d0c30c72a5a433f40ad1f0ce55d9156f33acd3d11886d1fe
   .claude/skills/kaggle/references/validation-strategy.md: sha256:795db76c8784ae099c5138e6b3cfb1944f52f806070e219dad2ccafc0be9b1ad
-  .claude/skills/kaggle/references/when-stuck.md: sha256:2c60eac3c629ed0b1a6a46857d19d58cdde14548aea2b274557c0714ca2827f4
-  .claude/skills/kaggle/templates/competition-plan.md: sha256:e214ace44860e2884c3e010e4ef2ee46d8e5db5cb3b8a2c09e54db63518f4ee9
+  .claude/skills/kaggle/references/when-stuck.md: sha256:e1e7b9e0c38238d32cf24250dd93e06c10955a0d3943010c89a186706bee3cf2
+  .claude/skills/kaggle/references/workflow-graph.md: sha256:872b569232604877c694950624980b8b48e29225f995d8d89afcd97b4142aa73
+  .claude/skills/kaggle/templates/competition-plan.md: sha256:09d8dabda17d447140f38ebf2b1ba799c945252d5e42125196cb4090a5192446
   .claude/skills/kaggle/templates/project-structure.md: sha256:8cef232d2a591f74369bf20ad4b757eb6a9f5216ed6b2ceb780b036e09ebcb48
   .claude/skills/neovim/SKILL.md: sha256:d4cba457dccb8ea7408ec2f750310be48e129056b6b4cbfa4b90d715ad4599e0
   .claude/skills/review-pr/SKILL.md: sha256:0f73f50f5949a314d7c7a804e211742a5b335bf2f5d8b97878248c88d8ee297d
