@@ -43,4 +43,4 @@ skills-prune:
 init:
 	@$(foreach val, $(wildcard ./etc/init/*.sh), bash $(val);)
 
-.PHONY: deploy init skills skills-prune
+.PHONY: deploy init agents skills skills-prune
