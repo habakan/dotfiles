@@ -20,31 +20,36 @@ make init
 ```
 This executes all shell scripts in `./etc/init/`.
 
-### Set up / update skills (APM)
+### Set up skills on a new machine
 ```bash
-git submodule update --init --recursive   # fetch the skills submodule
-apm install                               # regenerate .claude/skills + .agents/skills
-make deploy                               # symlink them into ~/.claude/skills and ~/.codex/skills
+git clone git@github.com:habakan/skills.git ~/work/skills   # own skills
+apm install                                                 # external skills only
+make skills                                                 # symlink both into the clients
 ```
 
-## Skills (managed via microsoft/apm)
+## Skills
 
-Skills are authored once and deployed cross-client (Claude Code + Codex).
+Own skills and external skills are managed separately. They are authored once and used by
+both Claude Code and Codex.
 
-- **Source of truth**: `.apm/skills/` (git submodule -> `habakan/skills`). Edit skills here.
-- **apm.yml**: declares `targets: [claude, codex]` and external skill packages
-  (`dependencies.apm`). `apm install` walks `.apm/skills/` (via `includes: auto`) and
-  deploys to both client dirs.
-- **Generated (gitignored)**: `.claude/skills/` (Claude reads this) and `.agents/skills/`
-  (Codex and other agentskills.io clients read this). Regenerate with `apm install`.
-- **Deploy**: `make deploy` symlinks `.claude/skills/*` -> `~/.claude/skills/` and
-  `.agents/skills/*` -> `~/.codex/skills/`.
+- **Own skills**: `~/work/skills` (clone of `habakan/skills`). **Edit here directly** —
+  `make skills` symlinks each skill into `~/.claude/skills/` and `~/.codex/skills/`, so a
+  save takes effect immediately. No build step, no copies. Commit and push in that clone.
+- **External skills**: declared in `apm.yml` under `dependencies.apm`. `apm install`
+  fetches them into `.claude/skills/` and `.agents/skills/` (gitignored), which
+  `make skills` also symlinks. `includes: []` keeps apm from touching own skills.
+- **Layout**: top-level dirs with a `SKILL.md`, plus `meta/*`, are deployed. `make skills`
+  also prunes symlinks whose target no longer exists.
 
-Workflow to add/edit a skill: edit under `.apm/skills/` (commit & push the submodule),
-then `apm install && make deploy`.
+Workflow to add/edit an own skill: edit under `~/work/skills/`, then commit & push there.
+`make skills` is only needed when adding or removing a skill.
 
 Using a skill in another project for Codex: in that repo run
 `apm install habakan/skills/<name> -t codex` and commit `.agents/skills/`.
+
+**Do not put skills back under `.apm/skills/` or route own skills through `apm install`.**
+That produced three copies of every skill, and content that existed only in the generated
+(gitignored) dirs was silently lost.
 
 ## Structure
 
@@ -52,7 +57,6 @@ Using a skill in another project for Codex: in that repo run
 - `.tmux.conf` - tmux configuration (prefix key: C-t)
 - `.vimrc` - Vim configuration
 - `.config/nvim/init.lua` - Neovim configuration (Lua)
-- `.apm/skills/` - Skills submodule (`habakan/skills`); APM source of truth
-- `apm.yml` / `apm.lock.yaml` - APM manifest and lockfile
+- `apm.yml` / `apm.lock.yaml` - APM manifest and lockfile (external skills only)
 - `Makefile` - Deployment automation
 - `etc/init/*.sh` - Initialization scripts (executed by `make init`)
