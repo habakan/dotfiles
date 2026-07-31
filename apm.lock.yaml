@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-07-31T00:59:45.540132+00:00'
+generated_at: '2026-07-31T06:33:00.882192+00:00'
 apm_version: 0.22.0
 dependencies:
 - repo_url: habakan/skills
@@ -21,11 +21,11 @@ dependencies:
     .claude/skills/skill-editor/SKILL.md: sha256:a1b1a71b2c76a6bc3aefb2b3beb93bde37e761a6bc544827d8bc228684532c58
   content_hash: sha256:51d6f466d1c1d6ebe16b9ba57012524038093d0468195209e673f0cb6bd36b76
 - repo_url: habakan/skills
-  name: skills
+  name: skill-map
   host: github.com
-  resolved_commit: 539d0b20bc6f590300865d0eb1f2c4b806e9aa23
-  resolved_ref: 539d0b2
-  version: unknown
+  resolved_commit: 75beda2ec975a28a4c9dd03601e2a1be3944d548
+  resolved_ref: 75beda2
+  version: 1.0.0
   virtual_path: meta/skill-map
   is_virtual: true
   package_type: claude_skill
@@ -39,13 +39,13 @@ dependencies:
   - .claude/skills/skill-map/templates/skill-map.md
   - .claude/skills/skill-map/templates/viewer.html
   deployed_file_hashes:
-    .agents/skills/skill-map/SKILL.md: sha256:08ecfede425ee5ff790e2c482f029f8b6fe89937cfd5b6cf20eb0a64f70fd79a
+    .agents/skills/skill-map/SKILL.md: sha256:05f9a71972c97404efa20321ee28fca1f3c1f507b20fe50a89be5ec519e0c0bc
     .agents/skills/skill-map/templates/skill-map.md: sha256:90c5aec5121cd4b86a9baf23f4c819610616a01b9f243b93c91e6ed3da789362
     .agents/skills/skill-map/templates/viewer.html: sha256:9c11ea31dba3e0307f9d106edf51bbe09de20c5163a271332a2482ab7a481f8e
-    .claude/skills/skill-map/SKILL.md: sha256:08ecfede425ee5ff790e2c482f029f8b6fe89937cfd5b6cf20eb0a64f70fd79a
+    .claude/skills/skill-map/SKILL.md: sha256:05f9a71972c97404efa20321ee28fca1f3c1f507b20fe50a89be5ec519e0c0bc
     .claude/skills/skill-map/templates/skill-map.md: sha256:90c5aec5121cd4b86a9baf23f4c819610616a01b9f243b93c91e6ed3da789362
     .claude/skills/skill-map/templates/viewer.html: sha256:9c11ea31dba3e0307f9d106edf51bbe09de20c5163a271332a2482ab7a481f8e
-  content_hash: sha256:e7537bcd0cb2742db70761c6da514b6ee9744ae79d1bcb23109e9bd7bab2e6df
+  content_hash: sha256:249b57c65118948a6cf3ba71217e3085caeb437810f59f7f3cf66f4ae3a30272
 - repo_url: nulab/bee
   name: bee
   host: github.com
