@@ -43,6 +43,13 @@ alias gp='git pull --rebase'
 alias gd='git diff'
 alias gl='git log --oneline --graph --decorate -10'
 
+# Functions
+# Review a GitHub PR in hunk without checking it out.
+# Usage: hunk-pr 123 / hunk-pr 123 --repo owner/repo
+hunk-pr() {
+    gh pr diff "$1" --patch "${@:2}" | hunk patch -
+}
+
 # Load Powerlevel10k config
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
