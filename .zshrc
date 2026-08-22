@@ -65,8 +65,14 @@ hunk-pr() {
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/habano/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
