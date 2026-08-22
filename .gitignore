@@ -7,3 +7,11 @@ apm_modules/
 # APM generated skill outputs (source of truth is .apm/skills; regenerate with `apm install`)
 .claude/skills/
 .agents/skills/
+
+# herdr runtime state (not configuration)
+config/herdr/session.json
+config/herdr/release-notes.json
+config/herdr/.plugins.lock
+
+# tpm-managed tmux plugins
+tmux/plugins/
