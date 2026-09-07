@@ -15,3 +15,6 @@ config/herdr/.plugins.lock
 
 # tpm-managed tmux plugins
 tmux/plugins/
+
+# Karabiner の自動バックアップ (設定ではない)
+config/karabiner/automatic_backups/
