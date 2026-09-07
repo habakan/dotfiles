@@ -52,8 +52,8 @@ skills: skills-prune
 # 参照先が消えた symlink を掃除する(実ディレクトリには触れない)
 skills-prune:
 	@$(foreach d, $(HOME)/.claude/skills $(HOME)/.codex/skills, \
-		[ -d $(d) ] && find $(d) -maxdepth 1 -type l -exec sh -c \
-			'[ -e "$$1" ] || { echo "prune $$1"; rm "$$1"; }' _ {} \; ;)
+		if [ -d $(d) ]; then find $(d) -maxdepth 1 -type l -exec sh -c \
+			'[ -e "$$1" ] || { echo "prune $$1"; rm "$$1"; }' _ {} \; ; fi;)
 
 init:
 	@$(foreach val, $(wildcard ./etc/init/*.sh), bash $(val);)
