@@ -17,6 +17,10 @@ previous_agent = "prefix+shift+k"   # 前のエージェントへ
 next_agent = "prefix+shift+j"       # 次のエージェントへ
 focus_agent = "prefix+alt+1..9"     # N 番目のエージェントへ直接ジャンプ
 
+# 既定の open_notification_target が blocked/done でも反応しないため無効化し、
+# 同じキーを herdr-jump --attention に差し替える
+open_notification_target = ""
+
 [[keys.command]]
 key = "prefix+alt+s"
 type = "popup"
@@ -32,6 +36,12 @@ command = "$HOME/bin/herdr-jump"
 description = "fuzzy jump to agent/tab/workspace"
 width = "80%"
 height = "60%"
+
+[[keys.command]]
+key = "prefix+o"
+type = "shell"
+command = "$HOME/bin/herdr-jump --attention"
+description = "jump to the agent that needs attention"
 
 [terminal]
 # tmux: default-shell $SHELL → herdr 既定が $SHELL のため指定不要

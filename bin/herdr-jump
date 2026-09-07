@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Fuzzy-jump across herdr agents, tabs, and workspaces (Spotlight style)."""
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
 
 STATUS_ORDER = {"blocked": 0, "done": 1, "idle": 2, "working": 3}
+ATTENTION = ("blocked", "done")
+STATUS_LOG = Path("~/.local/state/herdr/agent-status.ndjson").expanduser()
+# 7MB を超える追記専用ログなので末尾だけ読む
+LOG_TAIL_BYTES = 1 << 20
 
 
 def herdr(*args):
@@ -65,7 +68,42 @@ def build_rows():
     return rows
 
 
+def last_change_times():
+    if not STATUS_LOG.exists():
+        return {}
+    with STATUS_LOG.open("rb") as f:
+        f.seek(max(0, STATUS_LOG.stat().st_size - LOG_TAIL_BYTES))
+        chunk = f.read().decode("utf-8", errors="replace")
+    times = {}
+    for line in chunk.split("\n")[1:]:
+        try:
+            record = json.loads(line)
+        except ValueError:
+            continue
+        if record.get("pane_id"):
+            times[record["pane_id"]] = record.get("ts", "")
+    return times
+
+
+def jump_to_attention():
+    agents = herdr("agent", "list")["agents"]
+    times = last_change_times()
+    candidates = [
+        a for a in agents if a.get("agent_status") in ATTENTION and not a.get("focused")
+    ]
+    if not candidates:
+        return 1
+    target = max(candidates, key=lambda a: times.get(a["pane_id"], ""))
+    subprocess.run(
+        ["herdr", "agent", "focus", target["pane_id"]], check=True, stdout=subprocess.DEVNULL
+    )
+    return 0
+
+
 def main():
+    if "--attention" in sys.argv:
+        return jump_to_attention()
+
     rows = build_rows()
     if "--print" in sys.argv:
         for target, label in rows:
