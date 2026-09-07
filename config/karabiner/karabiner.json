@@ -9,20 +9,7 @@
                     "identifiers": { "is_keyboard": true, "vendor_id": 1278, "product_id": 33 },
                     "simple_modifications": [
                         { "from": { "key_code": "left_option" }, "to": [{ "key_code": "left_command" }] },
-                        { "from": { "key_code": "right_option" }, "to": [{ "key_code": "right_command" }] },
-                        { "from": { "key_code": "caps_lock" }, "to": [{ "key_code": "right_command" }] }
-                    ]
-                },
-                {
-                    "identifiers": { "is_keyboard": true, "vendor_id": 0, "product_id": 0 },
-                    "simple_modifications": [
-                        { "from": { "key_code": "caps_lock" }, "to": [{ "key_code": "right_control" }] }
-                    ]
-                },
-                {
-                    "identifiers": { "is_keyboard": true, "vendor_id": 76, "product_id": 615 },
-                    "simple_modifications": [
-                        { "from": { "key_code": "caps_lock" }, "to": [{ "key_code": "right_control" }] }
+                        { "from": { "key_code": "right_option" }, "to": [{ "key_code": "right_command" }] }
                     ]
                 }
             ]
