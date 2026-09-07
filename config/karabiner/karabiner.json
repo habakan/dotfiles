@@ -4,6 +4,23 @@
             "name": "Default profile",
             "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" },
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "内蔵キーボードの caps lock を左 Control にする",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
+                                "to": [{ "key_code": "left_control" }],
+                                "conditions": [
+                                    { "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true }] }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
             "devices": [
                 {
                     "identifiers": { "is_keyboard": true, "vendor_id": 1278, "product_id": 33 },
