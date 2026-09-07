@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+"""Fuzzy-jump across herdr agents, tabs, and workspaces (Spotlight style)."""
+import json
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+STATUS_ORDER = {"blocked": 0, "done": 1, "idle": 2, "working": 3}
+
+
+def herdr(*args):
+    proc = subprocess.run(
+        ["herdr", *args], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+    )
+    return json.loads(proc.stdout)["result"]
+
+
+def short_cwd(path):
+    if not path:
+        return ""
+    home = str(Path.home())
+    if path == home:
+        return "~"
+    if path.startswith(home + "/"):
+        return "~/" + path[len(home) + 1 :]
+    return path
+
+
+def build_rows():
+    spaces = {w["workspace_id"]: w for w in herdr("workspace", "list")["workspaces"]}
+    tabs = {t["tab_id"]: t for t in herdr("tab", "list")["tabs"]}
+    agents = herdr("agent", "list")["agents"]
+
+    rows = []
+    seen_tabs = set()
+    for a in sorted(
+        agents,
+        key=lambda a: (
+            STATUS_ORDER.get(a.get("agent_status"), 9),
+            spaces.get(a.get("workspace_id"), {}).get("number", 99),
+        ),
+    ):
+        space = spaces.get(a.get("workspace_id"), {})
+        tab = tabs.get(a.get("tab_id"), {})
+        seen_tabs.add(a.get("tab_id"))
+        place = f'{space.get("label", "?")}/{tab.get("label", "?")}'
+        rows.append(
+            (
+                f'agent {a["pane_id"]}',
+                f'{a.get("agent_status", ""):<8}{a.get("agent", ""):<8}{place:<30}'
+                f'{a.get("terminal_title_stripped", "")}  {short_cwd(a.get("cwd"))}',
+            )
+        )
+
+    for tab_id, tab in tabs.items():
+        if tab_id in seen_tabs:
+            continue
+        space = spaces.get(tab.get("workspace_id"), {})
+        place = f'{space.get("label", "?")}/{tab.get("label", "?")}'
+        rows.append((f"tab {tab_id}", f'{"tab":<16}{place}'))
+
+    for space in spaces.values():
+        rows.append((f'space {space["workspace_id"]}', f'{"space":<16}{space.get("label", "")}'))
+    return rows
+
+
+def main():
+    rows = build_rows()
+    if "--print" in sys.argv:
+        for target, label in rows:
+            print(f"{target}\t{label}")
+        return 0
+
+    fzf = subprocess.run(
+        [
+            "fzf",
+            "--delimiter=\t",
+            "--with-nth=2..",
+            "--reverse",
+            "--no-sort",
+            "--tiebreak=begin",
+            "--prompt=jump> ",
+        ],
+        input="".join(f"{t}\t{l}\n" for t, l in rows),
+        stdout=subprocess.PIPE,
+        text=True,
+    )
+    if fzf.returncode != 0 or not fzf.stdout.strip():
+        return 0
+
+    kind, target = fzf.stdout.split("\t", 1)[0].split(" ", 1)
+    subprocess.run(
+        ["herdr", {"agent": "agent", "tab": "tab", "space": "workspace"}[kind], "focus", target],
+        check=True,
+        stdout=subprocess.DEVNULL,
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

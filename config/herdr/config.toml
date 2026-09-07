@@ -25,6 +25,14 @@ description = "show agent status change log"
 width = "90%"
 height = "70%"
 
+[[keys.command]]
+key = "prefix+f"
+type = "popup"
+command = "$HOME/bin/herdr-jump"
+description = "fuzzy jump to agent/tab/workspace"
+width = "80%"
+height = "60%"
+
 [terminal]
 # tmux: default-shell $SHELL → herdr 既定が $SHELL のため指定不要
 
