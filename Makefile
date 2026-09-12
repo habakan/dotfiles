@@ -19,7 +19,12 @@ deploy:
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 	@ln -sfnv $(abspath tmux) $(HOME)/.tmux
 	@mkdir -p $(HOME)/.config
-	@$(foreach val, $(wildcard config/*), ln -sfnv $(abspath $(val)) $(HOME)/.config/$(notdir $(val));)
+# リンク先が実ディレクトリだと ln -sfn はその中にリンクを張り、設定が読まれなくなる
+# (herdr が先に ~/.config/herdr を作っていた環境で発生)。そこだけ張らずに警告する。
+	@$(foreach val, $(wildcard config/*), \
+		if [ -d $(HOME)/.config/$(notdir $(val)) ] && [ ! -L $(HOME)/.config/$(notdir $(val)) ]; then \
+			echo "skip $(HOME)/.config/$(notdir $(val)): 実ディレクトリのため symlink を張らない"; \
+		else ln -sfnv $(abspath $(val)) $(HOME)/.config/$(notdir $(val)); fi;)
 	@$(MAKE) --no-print-directory agents
 	@$(MAKE) --no-print-directory skills
 
