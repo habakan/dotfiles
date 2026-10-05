@@ -40,6 +40,8 @@ agents:
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/settings.json) $(HOME)/.claude/settings.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/settings.local.json) $(HOME)/.claude/settings.local.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/hooks) $(HOME)/.claude/hooks
+	@chmod 600 $(AGENT_DIR)/codex/config.toml
+	@ln -sfnv $(abspath $(AGENT_DIR)/codex/config.toml) $(HOME)/.codex/config.toml
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks.json) $(HOME)/.codex/hooks.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks) $(HOME)/.codex/hooks
 
