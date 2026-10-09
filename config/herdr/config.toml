@@ -67,9 +67,9 @@ reveal_hidden_cursor_for_cjk_ime = true
 name = "tokyo-night"
 auto_switch = false
 
-# バックグラウンドのエージェント状態変化をmacOS通知センターに直接出す
+# system は client が mdfind を同期実行し Spotlight 不調時に固まる (0.7.5) ため terminal 経由
 [ui.toast]
-delivery = "system"
+delivery = "terminal"
 delay_seconds = 1
 
 # 状態変化時にサウンドも鳴らす（done=完了 / request=要対応）
