@@ -9,8 +9,8 @@ AGENT_DIR    := agent-config
 # 自作スキルの source of truth (habakan/skills の clone)。
 # ここを直接編集すれば symlink 経由で Claude / Codex に即反映される。
 SKILLS_DIR   := $(HOME)/work/skills
-# SKILL.md を持つ top-level ディレクトリ + meta/ 配下
-SKILLS_OWN   := $(patsubst %/,%,$(dir $(wildcard $(SKILLS_DIR)/*/SKILL.md) $(wildcard $(SKILLS_DIR)/meta/*/SKILL.md)))
+# SKILL.md を持つ top-level ディレクトリ + meta/・bot/ 配下
+SKILLS_OWN   := $(patsubst %/,%,$(dir $(wildcard $(SKILLS_DIR)/*/SKILL.md) $(wildcard $(SKILLS_DIR)/meta/*/SKILL.md) $(wildcard $(SKILLS_DIR)/bot/*/SKILL.md)))
 # apm が取得する外部スキル (自作は通さない)
 SKILLS_CLAUDE_EXT := $(wildcard .claude/skills/*)
 SKILLS_CODEX_EXT  := $(wildcard .agents/skills/*)
