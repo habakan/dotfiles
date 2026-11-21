@@ -31,8 +31,8 @@ make skills                                                 # symlink both into 
 
 **This repository is public. Do not put agent configuration content here.**
 
-Claude Code and Codex settings live in `agent-config/`, a private submodule
-(`habakan/agent-config`). `make agents` symlinks it into `~/.claude` and `~/.codex`.
+Claude Code, Codex, and Antigravity (agy) settings live in `agent-config/`, a private submodule
+(`habakan/agent-config`). `make agents` symlinks them into `~/.claude`, `~/.codex`, and `~/.gemini/config`.
 See that repo's README for the layout and for what is shared vs per-client.
 
 Edit the files inside `agent-config/` and commit in that submodule — the parent
@@ -41,11 +41,12 @@ only tracks the pointer.
 ## Skills
 
 Own skills and external skills are managed separately. They are authored once and used by
-both Claude Code and Codex.
+Claude Code, Codex, and Antigravity (agy).
 
 - **Own skills**: `~/work/skills` (clone of `habakan/skills`). **Edit here directly** —
-  `make skills` symlinks each skill into `~/.claude/skills/` and `~/.codex/skills/`, so a
-  save takes effect immediately. No build step, no copies. Commit and push in that clone.
+  `make skills` symlinks each skill into `~/.claude/skills/`, `~/.codex/skills/`, and
+  `~/.gemini/config/skills/`, so a save takes effect immediately. No build step, no copies.
+  Commit and push in that clone.
 - **External skills**: declared in `apm.yml` under `dependencies.apm`. `apm install`
   fetches them into `.claude/skills/` and `.agents/skills/` (gitignored), which
   `make skills` also symlinks. `includes: []` keeps apm from touching own skills.

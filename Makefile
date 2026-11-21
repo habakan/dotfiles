@@ -33,9 +33,10 @@ deploy:
 # 共有は AGENTS.md のみ。settings/hooks はスキーマが違うためクライアント別。
 # Claude Code は AGENTS.md を読まないので claude/CLAUDE.md 経由で @import する。
 agents:
-	@mkdir -p $(HOME)/.claude/commands $(HOME)/.codex
+	@mkdir -p $(HOME)/.claude/commands $(HOME)/.codex $(HOME)/.gemini/config
 	@$(foreach val, $(wildcard $(AGENT_DIR)/claude/commands/*), ln -sfnv $(abspath $(val)) $(HOME)/.claude/commands/$(notdir $(val));)
 	@ln -sfnv $(abspath $(AGENT_DIR)/AGENTS.md) $(HOME)/.codex/AGENTS.md
+	@ln -sfnv $(abspath $(AGENT_DIR)/AGENTS.md) $(HOME)/.gemini/config/AGENTS.md
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/CLAUDE.md) $(HOME)/.claude/CLAUDE.md
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/settings.json) $(HOME)/.claude/settings.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/settings.local.json) $(HOME)/.claude/settings.local.json
@@ -46,19 +47,22 @@ agents:
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks) $(HOME)/.codex/hooks
 
 # skills: 自作(SKILLS_DIR から直接) + 外部(apm 生成物) を各クライアントへ symlink する。
-# ~/.claude/skills と ~/.codex/skills は実ディレクトリのまま保つ。
+# ~/.claude/skills と ~/.codex/skills と ~/.gemini/config/skills は実ディレクトリのまま保つ。
 # ディレクトリ自体を symlink にすると他ツールのインストーラが書き込めなくなるため。
 skills: skills-prune
-	@mkdir -p $(HOME)/.claude/skills $(HOME)/.codex/skills
+	@mkdir -p $(HOME)/.claude/skills $(HOME)/.codex/skills $(HOME)/.gemini/config/skills
 	@$(foreach val, $(SKILLS_OWN), \
 		ln -sfnv $(val) $(HOME)/.claude/skills/$(notdir $(val)); \
-		ln -sfnv $(val) $(HOME)/.codex/skills/$(notdir $(val));)
+		ln -sfnv $(val) $(HOME)/.codex/skills/$(notdir $(val)); \
+		ln -sfnv $(val) $(HOME)/.gemini/config/skills/$(notdir $(val));)
 	@$(foreach val, $(SKILLS_CLAUDE_EXT), ln -sfnv $(abspath $(val)) $(HOME)/.claude/skills/$(notdir $(val));)
-	@$(foreach val, $(SKILLS_CODEX_EXT), ln -sfnv $(abspath $(val)) $(HOME)/.codex/skills/$(notdir $(val));)
+	@$(foreach val, $(SKILLS_CODEX_EXT), \
+		ln -sfnv $(abspath $(val)) $(HOME)/.codex/skills/$(notdir $(val)); \
+		ln -sfnv $(abspath $(val)) $(HOME)/.gemini/config/skills/$(notdir $(val));)
 
 # 参照先が消えた symlink を掃除する(実ディレクトリには触れない)
 skills-prune:
-	@$(foreach d, $(HOME)/.claude/skills $(HOME)/.codex/skills, \
+	@$(foreach d, $(HOME)/.claude/skills $(HOME)/.codex/skills $(HOME)/.gemini/config/skills, \
 		if [ -d $(d) ]; then find $(d) -maxdepth 1 -type l -exec sh -c \
 			'[ -e "$$1" ] || { echo "prune $$1"; rm "$$1"; }' _ {} \; ; fi;)
 
