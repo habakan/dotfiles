@@ -12,7 +12,16 @@ This is a dotfiles repository for managing personal configuration files. It uses
 ```bash
 make deploy
 ```
-This creates symbolic links for all dotfiles in the home directory. Files under `.config/` are linked to `~/.config/`.
+This creates symbolic links for all dotfiles in the home directory. Files under `config/` are linked to `~/.config/`.
+`~/.zshrc` and `~/.gitconfig` are not symlinks: they are real files that load `zshrc` / `gitconfig`
+from this repo, so installers and `git config --global` append there instead of into the repo.
+Put machine-specific settings in `~/.zshrc.local` or directly in those files, never in the repo.
+
+### Sync remote hosts
+```bash
+make update        # on the host: pull --ff-only, submodule update, deploy
+dotfiles-sync      # from the Mac: run `make update` on gpu1 and nkb over ssh
+```
 
 ### Run initialization scripts
 ```bash
@@ -65,7 +74,8 @@ That produced three copies of every skill, and content that existed only in the 
 
 ## Structure
 
-- `.gitconfig` - Git user configuration
+- `gitconfig` - Git user configuration (included from `~/.gitconfig`)
+- `zshrc` - zsh configuration (sourced from `~/.zshrc`)
 - `.tmux.conf` - tmux configuration (prefix key: C-t)
 - `.vimrc` - Vim configuration
 - `.config/nvim/init.lua` - Neovim configuration (Lua)

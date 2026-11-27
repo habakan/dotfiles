@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# 指定ホスト (既定: gpu1 nkb) の ~/dotfiles を main に揃える
+[ $# -eq 0 ] && set -- gpu1 nkb
+for h in "$@"; do
+  echo "== $h"
+  ssh "$h" 'cd ~/dotfiles && make update' || echo "!! $h: 失敗"
+done
