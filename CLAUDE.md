@@ -19,7 +19,8 @@ Put machine-specific settings in `~/.zshrc.local` or directly in those files, ne
 
 ### Sync remote hosts
 ```bash
-make update        # on the host: pull --ff-only, submodule update, deploy
+make update        # on the host: pull --ff-only, submodule update, make tools, deploy
+make tools         # install mise (to ~/.local/bin, no root) and the CLIs in config/mise/config.toml
 dotfiles-sync      # from the Mac: run `make update` on gpu1 and nkb over ssh
 ```
 

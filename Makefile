@@ -43,7 +43,13 @@ loaders:
 update:
 	git pull --ff-only
 	-git submodule update --init
+	-@$(MAKE) --no-print-directory tools
 	@$(MAKE) --no-print-directory deploy
+
+# config/mise のツールを入れる。mise が無ければ公式インストーラで ~/.local/bin に入れる (root 不要)。
+tools:
+	@command -v mise >/dev/null || [ -x $(HOME)/.local/bin/mise ] || curl -fsSL https://mise.run | sh
+	@PATH=$(HOME)/.local/bin:$$PATH mise install
 
 # agents: エージェント設定。実体は private の agent-config submodule。
 # 公開している dotfiles には中身を置かない。
@@ -58,8 +64,10 @@ agents:
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/settings.json) $(HOME)/.claude/settings.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/settings.local.json) $(HOME)/.claude/settings.local.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/claude/hooks) $(HOME)/.claude/hooks
-	@chmod 600 $(AGENT_DIR)/codex/config.toml
-	@ln -sfnv $(abspath $(AGENT_DIR)/codex/config.toml) $(HOME)/.codex/config.toml
+# 実ファイルなら上書きしない。gpu1 / nkb はホスト固有の provider 設定を持つ。
+	@if [ -f $(HOME)/.codex/config.toml ] && [ ! -L $(HOME)/.codex/config.toml ]; then \
+		echo "skip $(HOME)/.codex/config.toml: 実ファイルのため symlink を張らない"; \
+	else chmod 600 $(AGENT_DIR)/codex/config.toml && ln -sfnv $(abspath $(AGENT_DIR)/codex/config.toml) $(HOME)/.codex/config.toml; fi
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks.json) $(HOME)/.codex/hooks.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks) $(HOME)/.codex/hooks
 
@@ -87,4 +95,4 @@ skills-prune:
 init:
 	@$(foreach val, $(wildcard ./etc/init/*.sh), bash $(val);)
 
-.PHONY: deploy loaders update init agents skills skills-prune
+.PHONY: deploy loaders update tools init agents skills skills-prune

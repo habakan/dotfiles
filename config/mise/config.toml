@@ -1,0 +1,6 @@
+# 全ホストで揃える CLI。node / uv / claude / codex はホストごとの導入 (nvm、公式インストーラ) に任せる
+[tools]
+neovim = "0.11"
+gh = "latest"
+ripgrep = "latest"
+fd = "latest"

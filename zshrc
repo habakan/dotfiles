@@ -64,6 +64,7 @@ hunk-pr() {
 
 export PATH="$HOME/.local/bin:$PATH"
 export GPG_TTY=$(tty)
+command -v mise >/dev/null && eval "$(mise activate zsh)"
 
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
