@@ -62,6 +62,9 @@ hunk-pr() {
   fi
 ) &>/dev/null &
 
+# dotfiles/bin (deploy で ~/bin に張る)
+export PATH="$HOME/bin:$PATH"
+
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
