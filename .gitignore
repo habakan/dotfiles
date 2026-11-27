@@ -4,7 +4,7 @@
 # APM dependencies
 apm_modules/
 
-# APM generated skill outputs (source of truth is .apm/skills; regenerate with `apm install`)
+# APM generated skill outputs (外部スキルのみ。`apm install` で再生成する)
 .claude/skills/
 .agents/skills/
 

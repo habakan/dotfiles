@@ -58,9 +58,13 @@ hunk-pr() {
   cd ~/dotfiles 2>/dev/null &&
   git fetch -q origin main &&
   if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-    git pull --ff-only -q && make deploy
+    make update
   fi
 ) &>/dev/null &
+
+export PATH="$HOME/.local/bin:$PATH"
+export GPG_TTY=$(tty)
+command -v mise >/dev/null && eval "$(mise activate zsh)"
 
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
@@ -72,7 +76,3 @@ export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
 autoload -Uz compinit && compinit -C
 # <<< grok installer <<<
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/habano/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
