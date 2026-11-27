@@ -67,7 +67,7 @@ agents:
 # 実ファイルなら上書きしない。gpu1 / nkb はホスト固有の provider 設定を持つ。
 	@if [ -f $(HOME)/.codex/config.toml ] && [ ! -L $(HOME)/.codex/config.toml ]; then \
 		echo "skip $(HOME)/.codex/config.toml: 実ファイルのため symlink を張らない"; \
-	else chmod 600 $(AGENT_DIR)/codex/config.toml && ln -sfnv $(abspath $(AGENT_DIR)/codex/config.toml) $(HOME)/.codex/config.toml; fi
+	else { [ ! -f $(AGENT_DIR)/codex/config.toml ] || chmod 600 $(AGENT_DIR)/codex/config.toml; } && ln -sfnv $(abspath $(AGENT_DIR)/codex/config.toml) $(HOME)/.codex/config.toml; fi
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks.json) $(HOME)/.codex/hooks.json
 	@ln -sfnv $(abspath $(AGENT_DIR)/codex/hooks) $(HOME)/.codex/hooks
 
