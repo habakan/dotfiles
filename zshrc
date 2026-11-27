@@ -64,7 +64,6 @@ hunk-pr() {
 
 export PATH="$HOME/.local/bin:$PATH"
 export GPG_TTY=$(tty)
-command -v mise >/dev/null && eval "$(mise activate zsh)"
 
 # dotfiles/bin (deploy で ~/bin に張る)
 export PATH="$HOME/bin:$PATH"
@@ -79,3 +78,6 @@ export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
 autoload -Uz compinit && compinit -C
 # <<< grok installer <<<
+
+# ~/.zshrc.local の PATH 追加より後に有効化する。先に有効化すると Homebrew などが mise より前に来る
+command -v mise >/dev/null && eval "$(mise activate zsh)"
