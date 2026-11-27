@@ -12,7 +12,17 @@ This is a dotfiles repository for managing personal configuration files. It uses
 ```bash
 make deploy
 ```
-This creates symbolic links for all dotfiles in the home directory. Files under `.config/` are linked to `~/.config/`.
+This creates symbolic links for all dotfiles in the home directory. Files under `config/` are linked to `~/.config/`.
+`~/.zshrc` and `~/.gitconfig` are not symlinks: they are real files that load `zshrc` / `gitconfig`
+from this repo, so installers and `git config --global` append there instead of into the repo.
+Put machine-specific settings in `~/.zshrc.local` or directly in those files, never in the repo.
+
+### Sync remote hosts
+```bash
+make update        # on the host: pull --ff-only, submodule update, make tools, deploy
+make tools         # install mise (to ~/.local/bin, no root) and the CLIs in config/mise/config.toml
+dotfiles-sync      # from the Mac: run `make update` on gpu1 and nkb over ssh
+```
 
 ### Run initialization scripts
 ```bash
@@ -31,8 +41,8 @@ make skills                                                 # symlink both into 
 
 **This repository is public. Do not put agent configuration content here.**
 
-Claude Code and Codex settings live in `agent-config/`, a private submodule
-(`habakan/agent-config`). `make agents` symlinks it into `~/.claude` and `~/.codex`.
+Claude Code, Codex, and Antigravity (agy) settings live in `agent-config/`, a private submodule
+(`habakan/agent-config`). `make agents` symlinks them into `~/.claude`, `~/.codex`, and `~/.gemini/config`.
 See that repo's README for the layout and for what is shared vs per-client.
 
 Edit the files inside `agent-config/` and commit in that submodule — the parent
@@ -41,11 +51,12 @@ only tracks the pointer.
 ## Skills
 
 Own skills and external skills are managed separately. They are authored once and used by
-both Claude Code and Codex.
+Claude Code, Codex, and Antigravity (agy).
 
 - **Own skills**: `~/work/skills` (clone of `habakan/skills`). **Edit here directly** —
-  `make skills` symlinks each skill into `~/.claude/skills/` and `~/.codex/skills/`, so a
-  save takes effect immediately. No build step, no copies. Commit and push in that clone.
+  `make skills` symlinks each skill into `~/.claude/skills/`, `~/.codex/skills/`, and
+  `~/.gemini/config/skills/`, so a save takes effect immediately. No build step, no copies.
+  Commit and push in that clone.
 - **External skills**: declared in `apm.yml` under `dependencies.apm`. `apm install`
   fetches them into `.claude/skills/` and `.agents/skills/` (gitignored), which
   `make skills` also symlinks. `includes: []` keeps apm from touching own skills.
@@ -64,7 +75,8 @@ That produced three copies of every skill, and content that existed only in the 
 
 ## Structure
 
-- `.gitconfig` - Git user configuration
+- `gitconfig` - Git user configuration (included from `~/.gitconfig`)
+- `zshrc` - zsh configuration (sourced from `~/.zshrc`)
 - `.tmux.conf` - tmux configuration (prefix key: C-t)
 - `.vimrc` - Vim configuration
 - `.config/nvim/init.lua` - Neovim configuration (Lua)
