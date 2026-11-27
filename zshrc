@@ -50,6 +50,12 @@ hunk-pr() {
     gh pr diff "$1" --patch "${@:2}" | hunk patch -
 }
 
+# リモートでは既定の local だと keys.command がサーバーに届かず prefix+f が動かない
+# Usage: hr gpu1 / hr nkb
+hr() {
+    herdr --remote "$1" --remote-keybindings server "${@:2}"
+}
+
 # Load Powerlevel10k config
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
