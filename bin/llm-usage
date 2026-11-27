@@ -1,0 +1,3 @@
+#!/bin/sh
+# 実体は habakan/llm-management (private)。サブスクの使用率と消費優先度を表示する
+exec python3 "$HOME/work/personal/llm-management/collect.py" "$@"

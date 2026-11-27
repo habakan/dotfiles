@@ -66,6 +66,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export GPG_TTY=$(tty)
 command -v mise >/dev/null && eval "$(mise activate zsh)"
 
+# dotfiles/bin (deploy で ~/bin に張る)
+export PATH="$HOME/bin:$PATH"
+
 # Load local settings (machine-specific PATH, env vars, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
