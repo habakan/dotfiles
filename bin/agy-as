@@ -1,0 +1,17 @@
+#!/bin/bash
+# イメージ: docker build -t agy-img ~/dotfiles/docker/agy
+# 使い方: agy-as [profile] [agy の引数...]。引数なしなら一覧から選ぶ。profile ごとに volume を分けて認証を隔離
+set -eu
+if [ $# -eq 0 ]; then
+  profiles=$(docker volume ls -q --filter name='^agy-' | sed 's/^agy-//')
+  PS3='profile: '
+  select p in $profiles "(新規作成)"; do [ -n "${p:-}" ] && break; done
+  [ "$p" = "(新規作成)" ] && read -rp 'new profile name: ' p
+  [ -n "$p" ] || exit 1
+else
+  p=$1; shift
+fi
+exec docker run -it --rm \
+  -v "agy-$p:/home/agy/.gemini" \
+  -v "$PWD:/work" -w /work \
+  agy-img "$@"
