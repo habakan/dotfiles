@@ -17,7 +17,9 @@ jobs:
 
       - name: Verify symlinks
         run: |
-          test -L "$HOME/.gitconfig"
+          grep -q "path = $PWD/gitconfig" "$HOME/.gitconfig"
+          grep -qx "source $PWD/zshrc" "$HOME/.zshrc"
+          test "$(git config --get user.name)" = habakan
           test -L "$HOME/.tmux.conf"
           test -L "$HOME/.vimrc"
           test -L "$HOME/.config/nvim"
