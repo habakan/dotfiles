@@ -8,8 +8,11 @@ RUN apk add --no-cache bash curl git ca-certificates openssh-client \
 RUN curl -fsSL https://antigravity.google/cli/install.sh | bash -s -- --dir /usr/local/bin \
  && rm -rf /root/.cache /root/.gemini
 
+COPY entrypoint.sh /usr/local/bin/agy-entrypoint
+RUN chmod +x /usr/local/bin/agy-entrypoint
+
 USER agy
 # 先に作っておかないと、新しい named volume が root 所有でマウントされる
 RUN mkdir -p /home/agy/.gemini
 WORKDIR /work
-ENTRYPOINT ["agy"]
+ENTRYPOINT ["/usr/local/bin/agy-entrypoint"]

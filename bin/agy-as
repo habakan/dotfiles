@@ -11,7 +11,32 @@ if [ $# -eq 0 ]; then
 else
   p=$1; shift
 fi
-exec docker run -it --rm \
-  -v "agy-$p:/home/agy/.gemini" \
-  -v "$PWD:/work" -w /work \
-  agy-img "$@"
+
+# ~/bin/agy-as 経由で呼ばれても実体の dotfiles ルートを辿る
+script_path=${BASH_SOURCE[0]}
+while [ -L "$script_path" ]; do
+  script_dir=$(cd -P "$(dirname "$script_path")" && pwd)
+  script_path=$(readlink "$script_path")
+  [[ "$script_path" != /* ]] && script_path="$script_dir/$script_path"
+done
+dotfiles_dir=$(cd -P "$(dirname "$script_path")/.." && pwd)
+
+# volume 内の ~/.gemini/config へ直接マウントすると Docker が親ディレクトリを root 所有で作ってしまうため、
+# /opt/dotfiles へ read-only で渡し、entrypoint から agy ユーザーで symlink を張る
+mounts=(
+  -v "agy-$p:/home/agy/.gemini"
+  -v "$PWD:/work"
+)
+[ -d "$HOME/work/skills" ] && mounts+=(-v "$HOME/work/skills:/opt/dotfiles/own-skills:ro")
+[ -d "$dotfiles_dir/.agents/skills" ] && mounts+=(-v "$dotfiles_dir/.agents/skills:/opt/dotfiles/ext-skills:ro")
+[ -f "$dotfiles_dir/agent-config/AGENTS.md" ] && mounts+=(-v "$dotfiles_dir/agent-config/AGENTS.md:/opt/dotfiles/AGENTS.md:ro")
+
+docker_opts=(-it --rm "${mounts[@]}" -w /work)
+entrypoint="$dotfiles_dir/docker/agy/entrypoint.sh"
+if [ -x "$entrypoint" ]; then
+  docker_opts+=(-v "$entrypoint:/opt/dotfiles/entrypoint.sh:ro" --entrypoint /opt/dotfiles/entrypoint.sh)
+fi
+
+# コンテナ内の agy プロセスはホストから見えないため、herdr に前景の docker プロセスを agy として認識させる
+export HERDR_AGENT=agy
+exec docker run "${docker_opts[@]}" agy-img "$@"
